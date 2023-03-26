@@ -5,9 +5,9 @@ import {Container} from "../container/Container";
 
 export const Header: FC = () => {
     return (
-        <header className={style.wrapper}>
+        <header className={style.header}>
             <Container>
-                <div className={style.header}>
+                <div className={style.wrapper}>
                     <Nav/>
                 </div>
             </Container>
