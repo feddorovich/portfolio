@@ -13,7 +13,7 @@ export const Main: FC = () => {
                         <p>Frontend Developer</p>
                     </div>
                     <div className={style.photo}>
-                        photo
+
                     </div>
                 </div>
                 </Container>

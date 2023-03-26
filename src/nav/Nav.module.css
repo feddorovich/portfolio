@@ -1,6 +1,13 @@
 .nav {
-    border: 1px solid;
     width: 300px;
     display: flex;
     justify-content: space-between;
+    background-color: #f7f7f7;
+    padding: 15px;
+    border-radius: 9px;
+}
+
+.nav a {
+    color: #000000;
+    text-decoration: none;
 }

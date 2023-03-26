@@ -12,12 +12,21 @@
 }
 
 .title {
-    background-color: #eeeef5;
+    background-color: #f7f7f7;
+    font-weight: 700;
+    font-size: 44px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 70px 0;
+    user-select: none;
+    padding: 5px;
+    border-radius: 9px;
 }
 
 .skills {
-    border: 1px solid;
     width: 100%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px
 }

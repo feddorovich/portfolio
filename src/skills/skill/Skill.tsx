@@ -11,7 +11,7 @@ export const Skill: FC<PropsType> = (props) => {
         <div className={style.skill}>
             <div className={style.icon}></div>
             <h3>{props.title}</h3>
-            <span className={style.description}>{props.description}</span>
+            <p>{props.description}</p>
         </div>
     );
 };
