@@ -4,11 +4,11 @@ import {NavLink} from "react-router-dom";
 
 export const Nav: FC = () => {
     return (
-        <div className={style.nav}>
+        <nav className={style.nav}>
             <NavLink to={'/'}>Main</NavLink>
             <NavLink to={'/'}>Skills</NavLink>
             <NavLink to={'/'}>Projects</NavLink>
             <NavLink to={'/'}>Сontacts</NavLink>
-        </div>
+        </nav>
     );
 };
