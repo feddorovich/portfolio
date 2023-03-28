@@ -10,8 +10,10 @@ type PropsType = {
 export const Project: FC<PropsType> = (props) => {
     return (
         <div className={style.project}>
-            <div className={style.photo}>IMAGE</div>
-            {/*<button>BUTTON</button>*/}
+            <div className={style.photo}>
+                Hover me
+                <button className={style.btn}>View</button>
+            </div>
             <h3>{props.title}</h3>
             <p>{props.description}</p>
         </div>
