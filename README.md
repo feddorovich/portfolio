@@ -1,4 +1,4 @@
-### Discover [My Portfolio](https://feddorovich.github.io/portfolio/) and Latest Projects! 
+### Discover [My Portfolio](https://feddorovich.github.io/portfolio/) and Latest Project! 
 
 Welcome to my repository, where you can find my portfolio created using TypeScript, React, Redux, React Router Dom, and other modern frontend development technologies.
 

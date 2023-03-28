@@ -1,0 +1,12 @@
+.project {
+    border: 2px solid #E7E7E7;
+    border-radius: 5px;
+    width: 330px;
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 10px 1px #E7E7E7;
+    background: #FFFFFF;
+}

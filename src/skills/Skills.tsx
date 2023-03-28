@@ -8,7 +8,7 @@ export const Skills = () => {
         <section className={style.skillsBlock}>
             <Container>
                 <div className={style.wrapper}>
-                    <h2 className={style.title}>Skills</h2>
+                    <h2 className={style.title}>My Skills</h2>
                     <div className={style.skills}>
                         <Skill title={'JS'}
                                description={'The quick brown fox jumps over the lazy dog, but the lazy dog just yawns and goes back to sleep.'}/>

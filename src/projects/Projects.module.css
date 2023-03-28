@@ -1,0 +1,32 @@
+.projectsBlock {
+    height: 100vh;
+    background-color: #f1e2ff;
+}
+
+.wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.title {
+    background-color: #f7f7f7;
+    font-weight: 700;
+    font-size: 44px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 70px 0;
+    user-select: none;
+    padding: 5px;
+    border-radius: 9px;
+}
+
+.projects {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px
+}
