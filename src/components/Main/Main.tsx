@@ -1,6 +1,6 @@
 import React, {FC} from 'react';
 import style from './Main.module.css'
-import {Container} from "../container/Container";
+import {Container} from "../Container/Container";
 
 export const Main: FC = () => {
     return (

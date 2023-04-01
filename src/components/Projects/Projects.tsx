@@ -1,7 +1,7 @@
 import React, {FC} from 'react';
 import style from './Projects.module.css'
-import {Container} from "../container/Container";
-import {Project} from "./project/Project";
+import {Container} from "../Container/Container";
+import {Project} from "./Project/Project";
 
 export const Projects: FC = () => {
     return (

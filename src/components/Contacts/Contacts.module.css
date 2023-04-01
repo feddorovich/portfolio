@@ -1,0 +1,9 @@
+.contactsBlock {
+    height: 100%;
+    background-color: #ffe2e2;
+    user-select: none;
+}
+
+.wrapper {
+    height: 100%;
+}

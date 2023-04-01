@@ -1,7 +1,7 @@
 import React from 'react';
 import style from './Skills.module.css'
-import {Skill} from "./skill/Skill";
-import {Container} from "../container/Container";
+import {Skill} from "./Skill/Skill";
+import {Container} from "../Container/Container";
 
 type SkillDataType = {
     id: number
