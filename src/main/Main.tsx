@@ -8,9 +8,9 @@ export const Main: FC = () => {
                 <Container>
                 <div className={style.wrapper}>
                     <div className={style.text}>
-                        <span>Hi There</span>
+                        <span>Welcome to my portfolio</span>
                         <h1>I am Sergey Fedorovich</h1>
-                        <p>Frontend Developer</p>
+                        <p>A front-end developer</p>
                     </div>
                     <div className={style.photo}>
 
