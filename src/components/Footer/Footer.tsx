@@ -13,12 +13,15 @@ export const Footer: FC = () => {
                         <div className={style.navItem}>Projects</div>
                         <div className={style.navItem}>Contacts</div>
                     </div>
-                    <p>
-                        <span>© {new Date().getFullYear()} </span>
-                        <span><a target={'_blank'} href="https://www.example.com/">Sergey Fedorovich</a></span>
-                    </p>
+
                 </div>
             </Container>
+            <div className={style.copyright}>
+                <p>
+                    <span>© {new Date().getFullYear()} </span>
+                    <span><a target={'_blank'} href="https://www.example.com/">Sergey Fedorovich</a></span>
+                </p>
+            </div>
         </header>
     );
 };

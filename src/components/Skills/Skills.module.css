@@ -39,6 +39,7 @@
 }
 
 @media screen and (max-width: 576px) {
-    .skillsBlock {
+    .navItem {
+        flex: 50%;
     }
 }
