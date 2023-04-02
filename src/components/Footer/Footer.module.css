@@ -21,7 +21,7 @@
 
 .navItem {
     height: 40px;
-    width: 150px;
+    width: 200px;
     background-color: #eeeef5;
     border: 5px solid #E7E7E7;
     border-radius: 9px;
@@ -58,12 +58,14 @@
 
 @media screen and (max-width: 768px) {
     .navItem {
-        flex: 50%;
+        width: 150px;
+        flex: 40%;
     }
 }
 
 @media screen and (max-width: 576px) {
     .navItem {
-        flex: 100%;
+        width: 90px;
+        flex: 40%;
     }
 }
