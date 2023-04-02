@@ -8,10 +8,10 @@ export const Footer: FC = () => {
             <Container>
                 <div className={style.wrapper}>
                     <div className={style.footerNav}>
-                        <div className={style.navItem}>1</div>
-                        <div className={style.navItem}>2</div>
-                        <div className={style.navItem}>3</div>
-                        <div className={style.navItem}>4</div>
+                        <div className={style.navItem}>Main</div>
+                        <div className={style.navItem}>Skills</div>
+                        <div className={style.navItem}>Projects</div>
+                        <div className={style.navItem}>Contacts</div>
                     </div>
                     <p>
                         <span>© {new Date().getFullYear()} </span>
