@@ -7,13 +7,16 @@ export const Footer: FC = () => {
         <header className={style.footer}>
             <Container>
                 <div className={style.wrapper}>
-                    <h2 className={style.title}>Sergey Fedorovich</h2>
                     <div className={style.footerNav}>
                         <div className={style.navItem}>1</div>
                         <div className={style.navItem}>2</div>
                         <div className={style.navItem}>3</div>
                         <div className={style.navItem}>4</div>
                     </div>
+                    <p>
+                        <span>© {new Date().getFullYear()} </span>
+                        <span><a target={'_blank'} href="https://www.example.com/">Sergey Fedorovich</a></span>
+                    </p>
                 </div>
             </Container>
         </header>
