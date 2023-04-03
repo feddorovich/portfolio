@@ -6,6 +6,7 @@ export const Main: FC = () => {
     return (
             <section className={style.mainBlock}>
                 <Container>
+
                 <div className={style.wrapper}>
                     <div className={style.photo}>
 

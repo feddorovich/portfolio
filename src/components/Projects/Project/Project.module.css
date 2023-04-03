@@ -24,7 +24,7 @@
     position: relative;
     background-size: cover;
     background-position: center;
-    transition: 0.5s;
+    transition: all 0.3s ease-in-out;
 }
 
 .btn {
@@ -38,12 +38,24 @@
     cursor: pointer;
     border-radius: 5px;
     text-align: center;
-    transition: 0.5s;
+    transition: all 0.3s ease-in-out;
 }
 
-.photo:hover {
+.photo:before {
+    content: '';
+    position: absolute;
     background-color: rgba(0, 0, 0, 0.3);
-    background-blend-mode: multiply;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    border-radius: 9px;
+    transition: all 0.5s ease-out;
+}
+
+.photo:hover::before {
+    opacity: 1;
 }
 
 .photo:hover .btn {
