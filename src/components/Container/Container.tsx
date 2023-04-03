@@ -1,9 +1,13 @@
-import React, {ReactNode, useState} from "react";
+import React, {FC, ReactNode, useState} from "react";
 import style from "./Container.module.css";
 import 'animate.css';
 import {useInView} from "react-intersection-observer";
 
-export const Container = ({children}: { children: ReactNode }) => {
+type ContainerType = {
+    children: ReactNode
+}
+
+export const Container: FC<ContainerType> = ({children}) => {
     const [active, setActive] = useState(false)
 
     const {ref, inView} = useInView({
