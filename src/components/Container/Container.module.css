@@ -5,3 +5,7 @@
     margin: 0 auto;
     height: 100%;
 }
+
+.opacity {
+    opacity: 0;
+}

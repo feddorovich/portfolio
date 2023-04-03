@@ -19,7 +19,7 @@ export const Footer: FC = () => {
             <div className={style.copyright}>
                 <p>
                     <span>© {new Date().getFullYear()} </span>
-                    <span><a target={'_blank'} href="https://www.example.com/">Sergey Fedorovich</a></span>
+                    <span><a target={'_blank'} href="https://github.com/feddorovich" rel="noreferrer">Sergey Fedorovich</a></span>
                 </p>
             </div>
         </header>
