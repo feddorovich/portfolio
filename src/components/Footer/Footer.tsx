@@ -8,7 +8,7 @@ export const Footer: FC = () => {
         <header className={style.footer}>
             <Container>
                 <div className={style.wrapper}>
-                    <Animation animation={'animate__fadeInUp'} threshold={0.4}>
+                    <Animation animation={'animate__fadeIn'} threshold={0.4}>
                         <div className={style.footerNav}>
                             <div className={style.navItem}>Main</div>
                             <div className={style.navItem}>Skills</div>
@@ -18,7 +18,7 @@ export const Footer: FC = () => {
                     </Animation>
                 </div>
             </Container>
-            <Animation animation={'animate__fadeInUp'} threshold={0.4}>
+            <Animation animation={'animate__fadeIn'} threshold={0.4}>
                 <div className={style.copyright}>
                     <p>
                         <span>© {new Date().getFullYear()} </span>
