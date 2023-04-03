@@ -1,28 +1,14 @@
-import React, {FC, ReactNode, useState} from "react";
+import React, {FC, ReactNode} from "react";
 import style from "./Container.module.css";
-import 'animate.css';
-import {useInView} from "react-intersection-observer";
 
 type ContainerType = {
     children: ReactNode
 }
 
 export const Container: FC<ContainerType> = ({children}) => {
-    const [active, setActive] = useState(false)
-
-    const {ref, inView} = useInView({
-        threshold: 0.4
-    })
-
-    React.useEffect(() => {
-        if (inView) {
-            setActive(true)
-        }
-    }, [inView])
-
     return (
         <div className={style.container}>
-            <div ref={ref} className={`${active ? 'animate__animated animate__fadeIn' : style.opacity}`}>
+            <div>
                 {children}
             </div>
         </div>
