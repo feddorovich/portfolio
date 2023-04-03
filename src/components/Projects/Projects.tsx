@@ -2,13 +2,16 @@ import React, {FC} from 'react';
 import style from './Projects.module.css'
 import {Container} from "../Container/Container";
 import {Project} from "./Project/Project";
+import {Animation} from "../Animation/Animation";
 
 export const Projects: FC = () => {
     return (
         <section className={style.projectsBlock}>
             <Container>
                 <div className={style.wrapper}>
-                    <h2 className={style.title}>My Projects</h2>
+                    <Animation animation={'animate__fadeInUp'} threshold={0.4}>
+                        <h2 className={style.title}>My Projects</h2>
+                    </Animation>
                     <div className={style.projects}>
                         <Project img={'https://www.imgonline.com.ua/examples/bee-on-daisy.jpg'}
                                  title={'The Impact of Advancing Technology'}
