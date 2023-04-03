@@ -7,14 +7,15 @@ export const Main: FC = () => {
             <section className={style.mainBlock}>
                 <Container>
                 <div className={style.wrapper}>
-                    <div className={style.text}>
-                        <span>Welcome to my portfolio</span>
-                        <h1>I am Sergey Fedorovich</h1>
-                        <p>A front-end developer</p>
-                    </div>
                     <div className={style.photo}>
 
                     </div>
+                    <div className={style.text}>
+                        <p>Welcome to my portfolio</p>
+                        <h1>I am Sergey Fedorovich</h1>
+                        <p>A front-end developer</p>
+                    </div>
+
                 </div>
                 </Container>
             </section>
