@@ -43,13 +43,15 @@ export const Skills = () => {
                     <Animation animation={'animate__fadeInUp'} threshold={0.4}>
                         <h2 className={style.title}>My Skills</h2>
                     </Animation>
-                    <div className={style.skills}>
-                        {skillData.map(s => {
-                            return (
-                                <Skill key={s.id} title={s.title} description={s.description}/>
-                            )
-                        })}
-                    </div>
+                    <Animation animation={'animate__fadeInUp'} threshold={0.1}>
+                        <div className={style.skills}>
+                            {skillData.map(s => {
+                                return (
+                                    <Skill key={s.id} title={s.title} description={s.description}/>
+                                )
+                            })}
+                        </div>
+                    </Animation>
                 </div>
             </Container>
         </section>

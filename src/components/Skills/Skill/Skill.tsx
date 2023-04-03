@@ -9,10 +9,10 @@ type PropsType = {
 
 export const Skill: FC<PropsType> = (props) => {
     return (
-        <Animation className={style.skill} animation={'animate__fadeInUp'} threshold={0.4}>
+        <div className={style.skill} >
             <div className={style.icon}></div>
             <h3>{props.title}</h3>
             <p>{props.description}</p>
-        </Animation>
+        </div>
     );
 };
