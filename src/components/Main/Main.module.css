@@ -18,6 +18,7 @@
     background-color: #f7f7f7;
     padding: 15px;
     border-radius: 9px;
+    word-break: break-word;
 }
 
 .text h1 {
