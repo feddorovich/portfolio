@@ -24,10 +24,8 @@ export const Animation: FC<AnimationType> = ({children, animation, threshold, cl
     }, [inView])
 
     return (
-        <div>
             <div ref={ref} className={`${active ? `animate__animated ${animation} ${className}` : style.opacity }`}>
                 {children}
             </div>
-        </div>
     );
 };
