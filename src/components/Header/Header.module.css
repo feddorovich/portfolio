@@ -13,3 +13,15 @@
     justify-content: flex-end;
     align-items: center;
 }
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .wrapper {
+        height: 60px;
+    }
+}
