@@ -1,5 +1,4 @@
 .skillsBlock {
-    /*height: 100vh;*/
     background-color: #d4ffc0;
 }
 
@@ -30,16 +29,4 @@
     flex-wrap: wrap;
     gap: 15px;
     margin-bottom: 30px;
-}
-
-@media screen and (max-width: 768px) {
-    .skillsBlock {
-        height: 100%;
-    }
-}
-
-@media screen and (max-width: 576px) {
-    .navItem {
-        flex: 50%;
-    }
 }
