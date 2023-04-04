@@ -12,7 +12,6 @@ export const Projects: FC = () => {
                     <Animation animation={'animate__fadeInUp'} threshold={0.4}>
                         <h2 className={style.title}>My Projects</h2>
                     </Animation>
-                    <Animation animation={'animate__fadeInUp'} threshold={0.2}>
                         <div className={style.projects}>
                             <Project img={'https://www.imgonline.com.ua/examples/bee-on-daisy.jpg'}
                                      title={'The Impact of Advancing Technology'}
@@ -21,7 +20,6 @@ export const Projects: FC = () => {
                                      title={'Balancing Technology and Well-Being'}
                                      description={'Today\'s technologies allow us to communicate and share information in real-time, work remotely, and simplify our lives. However, they can also have negative effects on our well-being if not used wisely and in moderation.'}/>
                         </div>
-                    </Animation>
                 </div>
             </Container>
         </section>

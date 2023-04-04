@@ -1,15 +1,12 @@
 .project {
     border: 2px solid #E7E7E7;
     border-radius: 5px;
-    max-width: calc(50% - 15px);
     padding: 20px;
-    flex-grow: 1;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     box-shadow: 0 0 10px 1px #E7E7E7;
     background: #FFFFFF;
-    /*position: relative;*/
 }
 
 .photo {
@@ -78,16 +75,4 @@
     text-align: justify;
     line-height: 1.4;
     border-radius: 9px;
-}
-
-@media screen and (max-width: 1170px) {
-    .project {
-        max-width: calc(50% - 15px);
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .project {
-        max-width: 100%;
-    }
 }

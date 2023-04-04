@@ -1,5 +1,4 @@
 .projectsBlock {
-    /*height: 100vh;*/
     background-color: #f1e2ff;
 }
 
@@ -24,21 +23,20 @@
 }
 
 .projects {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 15px;
     margin-bottom: 30px;
 }
 
 @media screen and (max-width: 768px) {
-    .projectsBlock {
-        height: 100%;
+    .projects {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
 @media screen and (max-width: 576px) {
-    .projectsBlock {
+    .projects {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
