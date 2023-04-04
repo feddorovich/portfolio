@@ -12,7 +12,7 @@ export const Сontacts: FC = () => {
                     <Animation animation={'animate__fadeInUp'} threshold={0.4}>
                         <h2 className={style.title}>Сontacts</h2>
                     </Animation>
-                    <Animation animation={'animate__fadeInUp'} threshold={0.4}>
+                    <Animation animation={'animate__fadeInLeft'} threshold={0.4}>
                         <form>
                             <label htmlFor="name">Name:</label>
                             <input type="text" id="name" name="name"/>
