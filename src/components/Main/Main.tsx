@@ -2,6 +2,7 @@ import React, {FC} from 'react';
 import style from './Main.module.css'
 import {Container} from "../Container/Container";
 import {Animation} from "../Animation/Animation";
+import ReactTypingEffect from 'react-typing-effect';
 
 export const Main: FC = () => {
     return (
@@ -15,7 +16,7 @@ export const Main: FC = () => {
                     <div className={style.text}>
                         <p>Welcome to my portfolio</p>
                         <h1>I am Sergey Fedorovich</h1>
-                        <p>A front-end developer</p>
+                        <ReactTypingEffect text="A front-end developer." speed={100} typingDelay={1000}/>
                     </div>
 
                 </div>
