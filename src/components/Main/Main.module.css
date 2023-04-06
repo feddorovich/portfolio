@@ -34,6 +34,11 @@
     border: 10px solid #E7E7E7;
 }
 
+.typingEffect {
+    background-color: #ffd4f0;
+    padding: 1px 0;
+}
+
 @media screen and (max-width: 768px) {
     .wrapper {
         flex-direction: column;

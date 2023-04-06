@@ -16,9 +16,8 @@ export const Main: FC = () => {
                     <div className={style.text}>
                         <p>Welcome to my portfolio</p>
                         <h1>I am Sergey Fedorovich</h1>
-                        <ReactTypingEffect text="A front-end developer." speed={100} typingDelay={1000}/>
+                        <ReactTypingEffect className={style.typingEffect} text="A front-end developer." speed={100} typingDelay={1000}/>
                     </div>
-
                 </div>
             </Container>
         </section>
