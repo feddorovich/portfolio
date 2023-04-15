@@ -4,3 +4,26 @@
     letter-spacing: -0.02em;
     min-width: 360px;
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #c1c1c1;
+    border-radius: 5px;
+    border: 2px solid #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    border: none;
+    background-color: #ababab;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: #4b4b4b;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
