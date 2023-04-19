@@ -4,8 +4,15 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'Golos_Text';
+  src: url('/src/assets/fonts/Golos_Text/GolosText-VariableFont_wght.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: -apple-system, BlinkMacSystemFont, 'Golos_Text','Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
