@@ -1,6 +1,22 @@
 .mainBlock {
     background-color: #ffd4f0;
     user-select: none;
+    position: relative;
+}
+
+.mainBlock::after {
+    content: '↓';
+    bottom: 20px;
+    color: #fff;
+    font-size: 20px;
+    height: 32px;
+    left: 50%;
+    line-height: 32px;
+    margin-left: -16px;
+    position: absolute;
+    text-align: center;
+    width: 32px;
+    z-index: 3;
 }
 
 .wrapper {
