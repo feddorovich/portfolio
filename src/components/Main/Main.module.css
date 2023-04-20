@@ -7,8 +7,9 @@
 .mainBlock::after {
     content: '↓';
     bottom: 20px;
-    color: #fff;
-    font-size: 20px;
+    color: #000000;
+    font-size: 30px;
+    font-weight: bold;
     height: 32px;
     left: 50%;
     line-height: 32px;
@@ -17,6 +18,23 @@
     text-align: center;
     width: 32px;
     z-index: 3;
+    opacity: 0;
+    animation: blink 3s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
 }
 
 .wrapper {
