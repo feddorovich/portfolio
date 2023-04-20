@@ -1,8 +1,8 @@
 .header {
-    background-color: #99d0fb;
+    background-color: #ffffff;
     position: fixed;
     width: 100%;
-    color: #fff;
+    color: #000000;
     text-align: center;
     z-index: 1;
     box-shadow: 0 -6px 10px 5px rgba(0, 0, 0, 0.2);
@@ -11,8 +11,22 @@
 .wrapper {
     height: 70px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    user-select: none;
+    cursor: pointer;
+    letter-spacing: 3px;
+}
+
+.logo a{
+    text-decoration: none;
+    color: #000000;
 }
 
 @media screen and (max-width: 768px) {
