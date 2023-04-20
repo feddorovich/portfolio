@@ -61,11 +61,15 @@
 }
 
 .photo {
-    width: 350px;
-    height: 350px;
-    background-color: #f7f7f7;
+    width: 455px;
+    height: 455px;
+    background-color: #8a8a8a;
+    background-image: url("https://cdn.mos.cms.futurecdn.net/5PMe5hr8tjSS9Nq5d6Cebe-970-80.jpg.webp");
+    background-size: cover;
+    background-position: center;
     border-radius: 50%;
-    border: 10px solid #E7E7E7;
+    border: 16px solid #F8F9FA;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
 }
 
 .typingEffect {
