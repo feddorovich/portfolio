@@ -7,7 +7,7 @@ import {NavLink} from "react-router-dom";
 export const Header: FC = () => {
 
     const handleNavLinkClick = () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' })
+        window.scrollTo({top: 0, behavior: 'smooth'})
     }
 
     return (
@@ -16,8 +16,9 @@ export const Header: FC = () => {
                 <div className={style.wrapper}>
                     <div className={style.logo}>
                         <NavLink to={'/'}
-                                 onClick={handleNavLinkClick}
-                        >Logo</NavLink>
+                                 onClick={handleNavLinkClick}>
+                            <img src="" alt="logo"/>
+                        </NavLink>
                     </div>
                     <Nav/>
                     <div>Socials</div>

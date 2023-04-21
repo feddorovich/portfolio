@@ -21,7 +21,7 @@
     text-transform: uppercase;
     user-select: none;
     cursor: pointer;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
 }
 
 .logo a{
