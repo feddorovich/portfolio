@@ -4,20 +4,6 @@
   box-sizing: border-box;
 }
 
-@font-face {
-  font-family: 'Golos_Text';
-  src: url('/src/assets/fonts/Golos_Text/GolosText-VariableFont_wght.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Poppins-Bold';
-  src: url('/src/assets/fonts/Poppins/Poppins-Bold.ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Golos_Text','Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
