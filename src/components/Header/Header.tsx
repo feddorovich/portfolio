@@ -17,7 +17,7 @@ export const Header: FC = () => {
                     <div className={style.logo}>
                         <NavLink to={'/'}
                                  onClick={handleNavLinkClick}>
-                            <img src="" alt="logo"/>
+                            Logo
                         </NavLink>
                     </div>
                     <Nav/>

@@ -16,12 +16,11 @@
 }
 
 .logo {
+    font-family: 'Poppins-Bold', 'Golos_Text', sans-serif;
     font-size: 30px;
-    font-weight: bold;
     text-transform: uppercase;
     user-select: none;
     cursor: pointer;
-    letter-spacing: 1px;
 }
 
 .logo a{
