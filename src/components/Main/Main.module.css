@@ -17,7 +17,6 @@
     position: absolute;
     text-align: center;
     width: 32px;
-    /*z-index: 3;*/
     opacity: 0;
     animation: blink 3s infinite;
 }
