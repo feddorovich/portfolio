@@ -4,36 +4,6 @@
     gap: 25px;
 }
 
-.navMobile {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.linkMobile {
-    display: flex;
-    font-family: 'Poppins-SemiBold', 'Golos_Text', sans-serif;
-    font-size: 16px;
-    text-transform: uppercase;
-    user-select: none;
-    cursor: pointer;
-    color: #000000;
-    text-decoration: none;
-    padding: 8px 0;
-    position: relative;
-}
-
-.linkMobile::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: -3px;
-    width: 100%;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    transition: 0.2s ease-in-out;
-}
-
 .link {
     font-family: 'Poppins-SemiBold', 'Golos_Text', sans-serif;
     font-size: 16px;
@@ -82,5 +52,59 @@
     bottom: -6px;
     width: 90%;
     border-bottom: 3px solid #f5df4f;
+    transition: 0.2s ease-in-out;
+}
+
+.navMobile {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.linkMobile {
+    display: flex;
+    font-family: 'Poppins-SemiBold', 'Golos_Text', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    user-select: none;
+    cursor: pointer;
+    color: #000000;
+    text-decoration: none;
+    padding: 8px 0;
+    position: relative;
+}
+
+.linkMobile::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -3px;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    transition: 0.2s ease-in-out;
+}
+
+.activeMobile {
+    display: flex;
+    font-family: 'Poppins-SemiBold', 'Golos_Text', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    user-select: none;
+    cursor: pointer;
+    color: #f5df4f;
+    text-decoration: none;
+    padding: 8px 0;
+    position: relative;
+}
+
+.activeMobile::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -3px;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     transition: 0.2s ease-in-out;
 }

@@ -46,17 +46,16 @@ export const Nav: FC<NavPropsType> = (props) => {
             </nav>
                 :
                 <nav className={style.navMobile}>
-                    <a className={style.linkMobile} href={'#main'}
+                    <a className={active === 'main' ? style.activeMobile : style.linkMobile} href={'#main'}
                        onClick={onChangeActiveLink('main')}>Main</a>
-                    <a className={style.linkMobile} href={'#skills'}
+                    <a className={active === 'skills' ? style.activeMobile : style.linkMobile} href={'#skills'}
                        onClick={onChangeActiveLink('skills')}>Skills</a>
-                    <a className={style.linkMobile} href={'#projects'}
+                    <a className={active === 'projects' ? style.activeMobile : style.linkMobile} href={'#projects'}
                        onClick={onChangeActiveLink('projects')}>Projects</a>
-                    <a className={style.linkMobile} href={'#contacts'}
+                    <a className={active === 'contacts' ? style.activeMobile : style.linkMobile} href={'#contacts'}
                        onClick={onChangeActiveLink('contacts')}>Contacts</a>
                 </nav>
             }
         </div>
-
     );
 };
