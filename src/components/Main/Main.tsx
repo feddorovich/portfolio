@@ -7,9 +7,8 @@ import mainPhoto from "../../assets/image/mainPhoto.jpg"
 
 export const Main: FC = () => {
     return (
-        <section className={style.mainBlock}>
+        <section className={style.mainBlock} id={'main'}>
             <Container>
-
                 <div className={style.wrapper}>
                     <Animation animation={'animate__zoomIn'} threshold={0.1}>
                         <div className={style.photo}

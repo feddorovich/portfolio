@@ -1,12 +1,11 @@
-import React, {FC, useState} from 'react';
+import React, {FC} from 'react';
 import style from './Contacts.module.css'
 import {Container} from "../Container/Container";
 import {Animation} from "../Animation/Animation";
 
 export const Сontacts: FC = () => {
-
     return (
-        <section className={style.contactsBlock}>
+        <section className={style.contactsBlock} id={'contacts'}>
             <Container>
                 <div className={style.wrapper}>
                     <Animation animation={'animate__fadeInUp'} threshold={0.4}>

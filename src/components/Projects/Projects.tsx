@@ -6,7 +6,7 @@ import {Animation} from "../Animation/Animation";
 
 export const Projects: FC = () => {
     return (
-        <section className={style.projectsBlock}>
+        <section className={style.projectsBlock} id={'projects'}>
             <Container>
                 <div className={style.wrapper}>
                     <Animation animation={'animate__fadeInUp'} threshold={0.4}>

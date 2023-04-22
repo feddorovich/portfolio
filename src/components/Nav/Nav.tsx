@@ -1,14 +1,23 @@
-import React, {FC} from 'react';
+import React, {FC,  useState} from 'react';
 import style from './Nav.module.css'
-import {NavLink} from "react-router-dom";
 
 export const Nav: FC = () => {
+    const [active, setActive] = useState<any>(document.location.href.split('#')[1])
+
+    const onChangeActiveLink = (value: string) => () => {
+        setActive(value)
+    }
+
     return (
         <nav className={style.nav}>
-            <NavLink to={'/'}>Main</NavLink>
-            <NavLink to={'/'}>Skills</NavLink>
-            <NavLink to={'/'}>Projects</NavLink>
-            <NavLink to={'/'}>Сontacts</NavLink>
+            <a className={active === 'main' ? style.active : style.link} href={'#main'}
+               onClick={onChangeActiveLink('main')}>Main</a>
+            <a className={active === 'skills' ? style.active : style.link} href={'#skills'}
+               onClick={onChangeActiveLink('skills')}>Skills</a>
+            <a className={active === 'projects' ? style.active : style.link} href={'#projects'}
+               onClick={onChangeActiveLink('projects')}>Projects</a>
+            <a className={active === 'contacts' ? style.active : style.link} href={'#contacts'}
+               onClick={onChangeActiveLink('contacts')}>Сontacts</a>
         </nav>
     );
 };

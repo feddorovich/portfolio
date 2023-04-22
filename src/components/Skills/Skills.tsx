@@ -37,7 +37,7 @@ const skillData: SkillDataType[] = [
 
 export const Skills = () => {
     return (
-        <section className={style.skillsBlock}>
+        <section className={style.skillsBlock} id={'skills'}>
             <Container>
                 <div className={style.wrapper}>
                     <Animation animation={'animate__fadeInUp'} threshold={0.4}>
