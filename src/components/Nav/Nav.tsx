@@ -1,12 +1,30 @@
-import React, {FC,  useState} from 'react';
+import React, {FC, useEffect, useState} from 'react';
 import style from './Nav.module.css'
 
 export const Nav: FC = () => {
-    const [active, setActive] = useState<any>(document.location.href.split('#')[1])
+    const [active, setActive] = useState(document.location.href.split('#')[1])
 
     const onChangeActiveLink = (value: string) => () => {
         setActive(value)
     }
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        setActive(entry.target.id);
+                    }
+                });
+            },
+            { threshold: 0.3 }
+        );
+
+        const sections = document.querySelectorAll('section');
+        sections.forEach((section) => observer.observe(section));
+
+        return () => observer.disconnect();
+    }, []);
 
     return (
         <nav className={style.nav}>
