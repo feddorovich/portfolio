@@ -1,17 +1,40 @@
 .nav {
-    width: 300px;
+    /*width: 300px;*/
     display: flex;
     justify-content: space-between;
     background-color: #f7f7f7;
     padding: 15px;
     border-radius: 9px;
+    gap: 25px;
 }
 
 .link {
+    font-family: 'Poppins-SemiBold', 'Golos_Text', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    user-select: none;
+    cursor: pointer;
     color: #000000;
     text-decoration: none;
 }
 
 .active {
-    color: red;
+    font-family: 'Poppins-SemiBold', 'Golos_Text', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    user-select: none;
+    cursor: pointer;
+    color: #000000;
+    text-decoration: none;
+    position: relative;
+}
+
+.active::after {
+    content: ""; /* добавляем пустой контент для псевдоэлемента */
+    position: absolute; /* устанавливаем абсолютное позиционирование */
+    left: 50%; /* устанавливаем позицию псевдоэлемента в центре элемента */
+    transform: translateX(-50%); /* сдвигаем псевдоэлемент на половину его ширины влево */
+    bottom: -6px; /* устанавливаем отступ снизу */
+    width: 90%; /* устанавливаем ширину псевдоэлемента */
+    border-bottom: 3px solid #f5df4f; /* добавляем подчеркивание */
 }

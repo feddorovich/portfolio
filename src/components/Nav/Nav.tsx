@@ -35,7 +35,7 @@ export const Nav: FC = () => {
             <a className={active === 'projects' ? style.active : style.link} href={'#projects'}
                onClick={onChangeActiveLink('projects')}>Projects</a>
             <a className={active === 'contacts' ? style.active : style.link} href={'#contacts'}
-               onClick={onChangeActiveLink('contacts')}>Сontacts</a>
+               onClick={onChangeActiveLink('contacts')}>Contacts</a>
         </nav>
     );
 };
