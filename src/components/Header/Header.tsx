@@ -3,6 +3,7 @@ import style from './Header.module.css'
 import {Nav} from "../Nav/Nav";
 import {Container} from "../Container/Container";
 import {Burger} from "../Burger/Burger";
+import {SocialIcons} from "../../SocialIcons/SocialIcons";
 
 export const Header: FC = () => {
     let [isMenuOpen, setIsMenuOpen] = useState<boolean>(false)
@@ -27,9 +28,7 @@ export const Header: FC = () => {
                         <div className={style.mobileMenuButton}>
                             <Burger onClick={onClickButtonHandler}/>
                         </div>
-                        <span>icon1</span>
-                        <span>icon2</span>
-                        <span>icon3</span>
+                        <SocialIcons/>
                     </div>
                 </div>
             </Container>
