@@ -6,9 +6,12 @@ import {Burger} from "../Burger/Burger";
 import {SocialIcons} from "../../SocialIcons/SocialIcons";
 
 export const Header: FC = () => {
-    let [isMenuOpen, setIsMenuOpen] = useState<boolean>(false)
+    const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false)
+    const [burger, setBurger] = useState<boolean>(false);
 
-    const onClickButtonHandler = () => setIsMenuOpen(!isMenuOpen)
+    const onClickButtonHandler = () => {
+        setIsMenuOpen(!isMenuOpen)
+    }
 
     return (
         <header className={style.header}>
@@ -22,11 +25,16 @@ export const Header: FC = () => {
                     <div className={isMenuOpen ? style.mobileMenu : style.mainMenu}>
                         <Nav isMenuOpen={isMenuOpen}
                              setIsMenuOpen={setIsMenuOpen}
+                             burger={burger}
+                             setBurger={setBurger}
                         />
                     </div>
                     <div className={style.icons}>
                         <div className={style.mobileMenuButton}>
-                            <Burger onClick={onClickButtonHandler}/>
+                            <Burger burger={burger}
+                                    setBurger={setBurger}
+                                    onClick={onClickButtonHandler}
+                            />
                         </div>
                         <SocialIcons/>
                     </div>

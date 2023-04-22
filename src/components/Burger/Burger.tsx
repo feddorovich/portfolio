@@ -1,20 +1,20 @@
-import React, {FC, useState} from 'react';
+import React, {FC} from 'react';
 import './Burger.css';
 
 type BurgerPropsType = {
+    burger: boolean
+    setBurger: (burger: boolean) => void
     onClick: () => void
 }
 
 export const Burger: FC<BurgerPropsType> = (props) => {
-    const [isOpen, setIsOpen] = useState(false);
-
     const handleClick = () => {
-        setIsOpen(!isOpen);
+        props.setBurger(!props.burger);
     };
 
     return (
         <div onClick={props.onClick}>
-            <button className={`burger-button ${isOpen ? 'open' : ''}`} onClick={handleClick}>
+            <button className={`burger-button ${props.burger ? 'open' : ''}`} onClick={handleClick}>
                 <span className="burger-line"></span>
                 <span className="burger-line"></span>
                 <span className="burger-line"></span>
