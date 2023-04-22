@@ -2,7 +2,7 @@ import React, {FC, useState} from 'react';
 import style from './Header.module.css'
 import {Nav} from "../Nav/Nav";
 import {Container} from "../Container/Container";
-import burger from '../../assets/icons/burger.svg'
+import {Burger} from "../Burger/Burger";
 
 export const Header: FC = () => {
     let [isMenuOpen, setIsMenuOpen] = useState<boolean>(false)
@@ -19,13 +19,13 @@ export const Header: FC = () => {
                         </a>
                     </div>
                     <div className={isMenuOpen ? style.mobileMenu : style.mainMenu}>
-                        <Nav isMenuOpen={isMenuOpen}/>
+                        <Nav isMenuOpen={isMenuOpen}
+                             setIsMenuOpen={setIsMenuOpen}
+                        />
                     </div>
                     <div className={style.icons}>
                         <div className={style.mobileMenuButton}>
-                            <button onClick={onClickButtonHandler}>
-                               MENU
-                            </button>
+                            <Burger onClick={onClickButtonHandler}/>
                         </div>
                         <span>icon1</span>
                         <span>icon2</span>

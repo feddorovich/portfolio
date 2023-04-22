@@ -3,6 +3,7 @@ import style from './Nav.module.css'
 
 type NavPropsType = {
     isMenuOpen: boolean
+    setIsMenuOpen: (isMenuOpen: boolean) => void
 }
 
 export const Nav: FC<NavPropsType> = (props) => {
@@ -10,6 +11,7 @@ export const Nav: FC<NavPropsType> = (props) => {
 
     const onChangeActiveLink = (value: string) => () => {
         setActive(value)
+        props.setIsMenuOpen(false)
     }
 
     useEffect(() => {
