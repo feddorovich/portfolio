@@ -1,10 +1,6 @@
 .nav {
-    /*width: 300px;*/
     display: flex;
     justify-content: space-between;
-    background-color: #f7f7f7;
-    padding: 15px;
-    border-radius: 9px;
     gap: 25px;
 }
 
@@ -16,6 +12,25 @@
     cursor: pointer;
     color: #000000;
     text-decoration: none;
+    position: relative;
+    transition: .5s;
+}
+
+.link::after {
+    opacity: 0;
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleX(0);
+    bottom: -6px;
+    width: 90%;
+    border-bottom: 3px solid #f5df4f;
+    transition: 0.2s ease-in-out ;
+}
+
+.link:hover::after {
+    transform: translateX(-50%) scaleX(1);
+    opacity: 1;
 }
 
 .active {
@@ -30,11 +45,21 @@
 }
 
 .active::after {
-    content: ""; /* добавляем пустой контент для псевдоэлемента */
-    position: absolute; /* устанавливаем абсолютное позиционирование */
-    left: 50%; /* устанавливаем позицию псевдоэлемента в центре элемента */
-    transform: translateX(-50%); /* сдвигаем псевдоэлемент на половину его ширины влево */
-    bottom: -6px; /* устанавливаем отступ снизу */
-    width: 90%; /* устанавливаем ширину псевдоэлемента */
-    border-bottom: 3px solid #f5df4f; /* добавляем подчеркивание */
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -6px;
+    width: 90%;
+    border-bottom: 3px solid #f5df4f;
+}
+
+.active:hover::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -6px;
+    width: 90%;
+    border-bottom: 3px solid #f5df4f;
 }
