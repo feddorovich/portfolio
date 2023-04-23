@@ -35,3 +35,12 @@
     line-height: 1.4;
     cursor: default;
 }
+
+@media screen and (max-width: 575px) {
+    .skill {
+        width: 160px;
+    }
+    .skill h3 {
+        font-size: 18px;
+    }
+}
