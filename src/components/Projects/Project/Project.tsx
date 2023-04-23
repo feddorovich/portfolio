@@ -10,12 +10,19 @@ type PropsType = {
 
 export const Project: FC<PropsType> = (props) => {
     return (
+
         <Animation className={style.project} animation={'animate__fadeInUp'} threshold={0.4}>
-            <div className={style.photo} style={{backgroundImage: `url(${props.img})`}}>
-                <button className={style.btn}>View</button>
+            <div className={style.photoWrapper}>
+                <div className={style.photo} style={{backgroundImage: `url(${props.img})`}}>
+                    <button className={style.btn}>View</button>
+                </div>
             </div>
-            <h3>{props.title}</h3>
-            <p>{props.description}</p>
+
+            <div className={style.text}>
+                <h3>{props.title}</h3>
+                <p>{props.description}</p>
+            </div>
+
         </Animation>
     );
 };

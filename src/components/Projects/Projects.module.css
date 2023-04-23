@@ -1,5 +1,5 @@
 .projectsBlock {
-    background-color: #f1e2ff;
+    background-color: #f8f9fa;
 }
 
 .wrapper {
@@ -8,34 +8,42 @@
     align-items: center;
     flex-direction: column;
     justify-content: flex-start;
+    padding: 100px 0;
 }
 
 .title {
-    background-color: #f7f7f7;
-    font-weight: 700;
-    font-size: 44px;
-    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    margin: 70px 0;
-    user-select: none;
-    padding: 5px;
-    border-radius: 9px;
+}
+
+.title h2 {
+    font-size: 40px;
+    margin: 15px 0 48px;
+}
+
+.title h3 {
+    background-color: #f5df4f;
+    padding: 0 8px;
+    font-weight: lighter;
+    font-size: 15px;
 }
 
 .projects {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 15px;
     margin-bottom: 30px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1199px) {
     .projects {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 575px) {
     .projects {
         grid-template-columns: repeat(1, 1fr);
     }
