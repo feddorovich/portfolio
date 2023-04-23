@@ -1,5 +1,5 @@
 .mainBlock {
-    background-color: #ffd4f0;
+    background-color: #f5df4f;
     user-select: none;
     position: relative;
 }
@@ -47,16 +47,25 @@
 }
 
 .text {
-    width: 350px;
-    background-color: #f7f7f7;
-    padding: 15px;
-    border-radius: 9px;
-    word-break: break-word;
+    /*width: 650px;*/
+    /*word-break: break-word;*/
 }
 
 .text h1 {
+    font-family: 'Poppins-ExtraLigh', 'Golos_Text', sans-serif;
+    font-size: 42px;
     text-transform: uppercase;
-    margin: 5px 0;
+}
+
+.typingEffect {
+    font-family: 'Poppins-SemiBold', 'Golos_Text', sans-serif;
+    font-size: 100px;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+
+.text p {
+    font-size: 21px;
 }
 
 .photo {
@@ -68,11 +77,6 @@
     border-radius: 50%;
     border: 16px solid #F8F9FA;
     box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
-}
-
-.typingEffect {
-    background-color: #ffd4f0;
-    padding: 1px 0;
 }
 
 @media screen and (max-width: 768px) {
