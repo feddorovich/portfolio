@@ -3,7 +3,7 @@ import style from './Header.module.css'
 import {Nav} from "../Nav/Nav";
 import {Container} from "../Container/Container";
 import {Burger} from "../Burger/Burger";
-import {SocialIcons} from "../../SocialIcons/SocialIcons";
+import {SocialIcons} from "../SocialIcons/SocialIcons";
 
 export const Header: FC = () => {
     const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false)
