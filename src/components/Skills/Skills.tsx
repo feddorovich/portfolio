@@ -1,57 +1,96 @@
-import React from 'react';
+import React, {FC} from 'react';
 import style from './Skills.module.css'
 import {Skill} from "./Skill/Skill";
 import {Container} from "../Container/Container";
 import {Animation} from "../Animation/Animation";
+import {
+    SiReact, SiRedux, SiJavascript, SiTypescript, SiAxios, SiJest, SiSass,
+    SiStyledcomponents, SiStorybook, SiMui, SiTestcafe
+} from "react-icons/si";
+import {IconType} from "react-icons/lib";
 
-type SkillDataType = {
+export type SkillDataType = {
     id: number
+    Icon: IconType
     title: string
-    description: string
 }
 
 const skillData: SkillDataType[] = [
     {
         id: 1,
-        title: 'JS',
-        description: 'The quick brown fox jumps over the lazy dog, but the lazy dog just yawns and goes back to sleep.'
+        Icon: SiReact,
+        title: 'React'
     },
     {
         id: 2,
-        title: 'CSS',
-        description: 'Life is like a camera. Focus on the good times, develop from the negatives, and if things don\'t work out, take another shot.'
+        Icon: SiRedux,
+        title: 'Redux'
     },
-    {id: 3, title: 'React', description: 'In the middle of every difficulty lies opportunity.'},
+    {
+        id: 3,
+        Icon: SiJavascript,
+        title: 'JavaScript'
+    },
     {
         id: 4,
-        title: 'JS',
-        description: 'The quick brown fox jumps over the lazy dog, but the lazy dog just yawns and goes back to sleep.'
+        Icon: SiTypescript,
+        title: 'TypeScript'
     },
     {
         id: 5,
-        title: 'CSS',
-        description: 'Life is like a camera. Focus on the good times, develop from the negatives, and if things don\'t work out, take another shot.'
+        Icon: SiAxios,
+        title: 'Axios'
     },
-    {id: 6, title: 'React', description: 'In the middle of every difficulty lies opportunity.'}
+    {
+        id: 6,
+        Icon: SiJest,
+        title: 'Jest'
+    },
+    {
+        id: 7,
+        Icon: SiSass,
+        title: 'SASS'
+    },
+    {
+        id: 8,
+        Icon: SiStyledcomponents,
+        title: 'Styled-Components'
+    },
+    {
+        id: 9,
+        Icon: SiStorybook,
+        title: 'StoryBook'
+    },
+    {
+        id: 10,
+        Icon: SiMui,
+        title: 'MUI'
+    },
+    {
+        id: 11,
+        Icon: SiTestcafe,
+        title: 'Unit-tests'
+    },
 ]
 
-export const Skills = () => {
+export const Skills:FC = () => {
     return (
         <section className={style.skillsBlock} id={'skills'}>
             <Container>
                 <div className={style.wrapper}>
                     <Animation animation={'animate__fadeInUp'} threshold={0.4}>
-                        <h2 className={style.title}>My Skills</h2>
-                    </Animation>
-                    {/*<Animation animation={'animate__fadeInUp'} threshold={0.1}>*/}
-                        <div className={style.skills}>
-                            {skillData.map(s => {
-                                return (
-                                    <Skill key={s.id} title={s.title} description={s.description}/>
-                                )
-                            })}
+                        <div className={style.title}>
+                            <h3>What can I do?</h3>
+                            <h2>How I can help your next project</h2>
                         </div>
-                    {/*</Animation>*/}
+                    </Animation>
+                    <div className={style.skills}>
+                        {skillData.map(s => {
+                            return (
+                                <Skill key={s.id} {...s} />
+                            )
+                        })}
+                    </div>
                 </div>
             </Container>
         </section>
