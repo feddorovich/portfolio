@@ -115,7 +115,6 @@
         justify-content: center;
         gap: 45px;
         padding-top: 50px;
-        /*margin-bottom: 50px;*/
     }
     .photo {
         width: 455px;
@@ -131,9 +130,10 @@
         word-break: break-word;
     }
     .text h1 {
+        font-family: 'Poppins-Regular', 'Golos_Text', sans-serif;
+        font-weight: lighter;
         font-size: 6vw;
     }
-
     .typingEffect {
         font-size: 12vw;
         padding: 12px 0;
