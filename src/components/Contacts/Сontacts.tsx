@@ -3,13 +3,13 @@ import style from './Contacts.module.css'
 import {Container} from "../Container/Container";
 import {Animation} from "../Animation/Animation";
 
-export const Сontacts: FC = () => {
+export const Contacts: FC = () => {
     return (
         <section className={style.contactsBlock} id={'contacts'}>
             <Container>
                 <div className={style.wrapper}>
                     <Animation animation={'animate__fadeInUp'} threshold={0.4}>
-                        <h2 className={style.title}>Сontacts</h2>
+                        <h2 className={style.title}>Contacts</h2>
                     </Animation>
                     <Animation animation={'animate__fadeInLeft'} threshold={0.4}>
                         <form>
