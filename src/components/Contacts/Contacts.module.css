@@ -1,31 +1,36 @@
 .contactsBlock {
-    /*height: 100%;*/
-    background-color: #ffe2e2;
+    background-color: #f5df4f;
+    padding: 100px 0;
 }
 
 .wrapper {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
 }
 
-.title {
-    background-color: #f7f7f7;
-    font-weight: 700;
-    font-size: 44px;
-    text-transform: uppercase;
-    text-align: center;
-    margin: 70px 0;
-    user-select: none;
-    padding: 5px;
-    border-radius: 9px;
+.getInTouch h2{
+    font-size: 40px;
+}
+
+.getInTouch p {
+    font-size: 21px;
+    margin: 24px 0;
+    line-height: 1.8;
+}
+
+.icons{
+    padding-top: 10px;
+}
+
+.form h2{
+    font-size: 40px;
+    padding-bottom: 30px;
 }
 
 .contactsBlock form {
     display: flex;
     flex-direction: column;
-    width: 600px;
     margin: 0 auto 30px;
 }
 
@@ -70,14 +75,21 @@ textarea:focus {
     transform: scale(1.01);
 }
 
-@media screen and (max-width: 768px) {
-    .contactsBlock form {
-        width: 450px;
+@media screen and (max-width: 575px) {
+    .contactsBlock {
+        background-color: #f5df4f;
+        padding: 50px 0;
     }
-}
-
-@media screen and (max-width: 576px) {
-    .contactsBlock form {
-        width: 300px;
+    .wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .getInTouch h2{
+        font-size: 30px;
+    }
+    .getInTouch p {
+        font-size: 16px;
+    }
+    .form h2{
+        font-size: 30px;
     }
 }
