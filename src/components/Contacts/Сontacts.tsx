@@ -9,7 +9,7 @@ export const Contacts: FC = () => {
         <section className={style.contactsBlock} id={'contacts'}>
             <Container>
                 <div className={style.wrapper}>
-                    <Animation animation={'animate__fadeInUp'} threshold={0.4}>
+                    <Animation animation={'animate__fadeInLeft'} threshold={0.4}>
                         <div className={style.getInTouch}>
                             <h2>Let's get in touch</h2>
                             <p>Thank you for visiting my portfolio page! If you are looking for an experienced and talented front-end developer
@@ -23,7 +23,7 @@ export const Contacts: FC = () => {
                             </div>
                         </div>
                     </Animation>
-                    <Animation animation={'animate__fadeInLeft'} threshold={0.4}>
+                    <Animation animation={'animate__fadeInRight'} threshold={0.4}>
                         <div className={style.form}>
                             <h2>Contact</h2>
                             <form>
@@ -36,7 +36,7 @@ export const Contacts: FC = () => {
                                 <label htmlFor="message">Message:</label>
                                 <textarea id="message" name="message" rows={5}></textarea>
 
-                                <button type="submit">Submit</button>
+                                <button type="submit">Send</button>
                             </form>
                         </div>
                     </Animation>

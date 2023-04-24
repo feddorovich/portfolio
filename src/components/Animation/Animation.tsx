@@ -5,7 +5,7 @@ import {useInView} from "react-intersection-observer";
 
 type AnimationType = {
     children: ReactNode
-    animation: 'animate__fadeIn' | 'animate__fadeInUp' | 'animate__fadeInLeft' | 'animate__zoomIn'
+    animation: 'animate__fadeIn' | 'animate__fadeInUp' | 'animate__fadeInLeft' | 'animate__fadeInRight' | 'animate__zoomIn'
     threshold: number
     className?: string
 }
