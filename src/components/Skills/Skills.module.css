@@ -50,6 +50,10 @@
 }
 
 @media screen and (max-width: 575px) {
+    .wrapper {
+        padding: 50px 0;
+    }
+
     .title h2{
         font-size: 26px;
     }
