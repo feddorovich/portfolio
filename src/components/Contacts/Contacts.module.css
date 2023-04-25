@@ -51,8 +51,9 @@ textarea {
     margin-bottom: 1rem;
     resize: none;
     background-color: transparent;
-    font-size: 22px;
+    font-size: 18px;
     transition: 0.3s ease-in-out;
+    font-family: 'Poppins-Regular', 'Golos_Text', sans-serif;
 }
 
 .contactsBlock textarea {
@@ -64,6 +65,7 @@ textarea {
 textarea:focus {
     outline: none;
     border-color: black;
+    background-color: rgba(59, 58, 48, 0.05);
 }
 
 .contactsBlock button {
@@ -75,7 +77,7 @@ textarea:focus {
     cursor: pointer;
     margin-top: 0.5rem;
     transition: 0.5s;
-    font-family: 'Poppins-Regular', 'Golos', sans-serif;
+    font-family: 'Poppins-Regular', 'Golos_Text', sans-serif;
     font-size: 16px;
 }
 
