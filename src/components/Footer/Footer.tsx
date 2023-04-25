@@ -17,7 +17,7 @@ export const Footer: FC = () => {
                         >Sergey Fedorovich</a>
                         {`. All Rights Reserved.`}
                     </div>
-                    <div>Lose Yourself to Dance 💃</div>
+                    <div className={style.status}>Lose Yourself to Dance 💃</div>
                 </Animation>
             </Container>
         </footer>
