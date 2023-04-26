@@ -1,4 +1,5 @@
 .skill {
+    width: 260px;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -33,6 +34,12 @@
     text-align: justify;
     line-height: 1.4;
     cursor: default;
+}
+
+@media screen and (max-width: 991px) {
+    .skill {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 575px) {
