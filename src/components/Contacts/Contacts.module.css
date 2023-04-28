@@ -3,6 +3,11 @@
     padding: 100px 0;
 }
 
+.contactsBlock ::selection {
+    background-color: #000000;
+    color: #f5df50;
+}
+
 .wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

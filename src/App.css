@@ -4,6 +4,11 @@
     min-width: 360px;
 }
 
+::selection {
+    background-color: #f5df50;
+    color: #FFFFFF;
+}
+
 ::-webkit-scrollbar {
     width: 10px;
 }

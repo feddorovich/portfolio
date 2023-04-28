@@ -1,7 +1,11 @@
 .mainBlock {
     background-color: #f5df4f;
-    user-select: none;
     position: relative;
+}
+
+.mainBlock ::selection {
+    background-color: #000000;
+    color: #f5df50;
 }
 
 .arrow {
