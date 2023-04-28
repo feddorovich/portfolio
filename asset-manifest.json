@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.5b5841b0.css",
+    "main.css": "/portfolio/static/css/main.643d2dba.css",
     "main.js": "/portfolio/static/js/main.dead45f7.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/GolosText-VariableFont_wght.ttf": "/portfolio/static/media/GolosText-VariableFont_wght.cddbe8e99d0cef3d85fb.ttf",
@@ -10,12 +10,12 @@
     "static/media/Poppins-Bold.ttf": "/portfolio/static/media/Poppins-Bold.cdb29a5d7ccf57ff05a3.ttf",
     "static/media/mainPhoto.jpg": "/portfolio/static/media/mainPhoto.a6e61f03b5cee2a02b5f.jpg",
     "index.html": "/portfolio/index.html",
-    "main.5b5841b0.css.map": "/portfolio/static/css/main.5b5841b0.css.map",
+    "main.643d2dba.css.map": "/portfolio/static/css/main.643d2dba.css.map",
     "main.dead45f7.js.map": "/portfolio/static/js/main.dead45f7.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5b5841b0.css",
+    "static/css/main.643d2dba.css",
     "static/js/main.dead45f7.js"
   ]
 }
