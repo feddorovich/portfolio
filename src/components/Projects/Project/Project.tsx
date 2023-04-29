@@ -2,13 +2,13 @@ import React, {FC} from 'react';
 import style from './Project.module.css'
 import {Animation} from "../../Animation/Animation";
 
-type PropsType = {
+type ProjectPropsType = {
     img: string
     title: string
     description: string
 }
 
-export const Project: FC<PropsType> = (props) => {
+export const Project: FC<ProjectPropsType> = (props) => {
     return (
 
         <Animation className={style.project} animation={'animate__fadeInUp'} threshold={0.4}>
