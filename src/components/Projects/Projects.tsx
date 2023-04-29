@@ -4,7 +4,15 @@ import {Container} from "../Container/Container";
 import {Project} from "./Project/Project";
 import {Animation} from "../Animation/Animation";
 
-const projectsData = [
+type ProjectsDataType = {
+    id: number
+    img: string
+    title: string
+    description: string
+    src: string
+}
+
+const projectsData: ProjectsDataType[] = [
     {
         id: 1,
         img: 'https://www.imgonline.com.ua/examples/bee-on-daisy.jpg',

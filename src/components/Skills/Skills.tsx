@@ -9,7 +9,7 @@ import {
 } from "react-icons/si";
 import {IconType} from "react-icons/lib";
 
-export type SkillDataType = {
+type SkillDataType = {
     id: number
     Icon: IconType
     title: string
