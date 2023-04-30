@@ -1,4 +1,4 @@
-import React, {FC, useEffect, useState} from 'react';
+import React, {FC, useEffect, useState} from 'react'
 import style from './Nav.module.css'
 
 type NavPropsType = {
@@ -22,43 +22,50 @@ export const Nav: FC<NavPropsType> = (props) => {
             (entries) => {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
-                        setActive(entry.target.id);
+                        setActive(entry.target.id)
                     }
-                });
+                })
             },
-            { threshold: 0.3 }
+            {threshold: 0.3}
         );
 
-        const sections = document.querySelectorAll('section');
-        sections.forEach((section) => observer.observe(section));
+        const sections = document.querySelectorAll('section')
+        sections.forEach((section) => observer.observe(section))
 
-        return () => observer.disconnect();
-    }, []);
+        return () => observer.disconnect()
+    }, [])
+
+    const navData = [
+        {link: 'main', name: 'Main'},
+        {link: 'skills', name: 'Skills'},
+        {link: 'projects', name: 'Projects'},
+        {link: 'contacts', name: 'Contacts'}
+    ]
 
     return (
         <div>
             {!props.isMenuOpen
-            ?
-            <nav className={style.nav}>
-                <a className={active === 'main' ? style.active : style.link} href={'#main'}
-                   onClick={onChangeActiveLink('main')}>Main</a>
-                <a className={active === 'skills' ? style.active : style.link} href={'#skills'}
-                   onClick={onChangeActiveLink('skills')}>Skills</a>
-                <a className={active === 'projects' ? style.active : style.link} href={'#projects'}
-                   onClick={onChangeActiveLink('projects')}>Projects</a>
-                <a className={active === 'contacts' ? style.active : style.link} href={'#contacts'}
-                   onClick={onChangeActiveLink('contacts')}>Contacts</a>
-            </nav>
+                ?
+                <nav className={style.nav}>
+                    {
+                        navData.map((a, i) => {
+                            return (
+                                <a key={i} className={active === a.link ? style.active : style.link} href={`#${a.link}`}
+                                   onClick={onChangeActiveLink(a.link)}>{a.name}</a>
+                            )
+                        })
+                    }
+                </nav>
                 :
                 <nav className={style.navMobile}>
-                    <a className={active === 'main' ? style.activeMobile : style.linkMobile} href={'#main'}
-                       onClick={onChangeActiveLink('main')}>Main</a>
-                    <a className={active === 'skills' ? style.activeMobile : style.linkMobile} href={'#skills'}
-                       onClick={onChangeActiveLink('skills')}>Skills</a>
-                    <a className={active === 'projects' ? style.activeMobile : style.linkMobile} href={'#projects'}
-                       onClick={onChangeActiveLink('projects')}>Projects</a>
-                    <a className={active === 'contacts' ? style.activeMobile : style.linkMobile} href={'#contacts'}
-                       onClick={onChangeActiveLink('contacts')}>Contacts</a>
+                    {
+                        navData.map((a, i) => {
+                            return (
+                                <a key={i} className={active === a.link ? style.activeMobile : style.linkMobile} href={`#${a.link}`}
+                                   onClick={onChangeActiveLink(a.link)}>{a.name}</a>
+                            )
+                        })
+                    }
                 </nav>
             }
         </div>
