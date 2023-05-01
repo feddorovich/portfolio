@@ -1,0 +1,152 @@
+.contactsBlock {
+  background-color: #f5df4f;
+  padding: 100px 0;
+
+  &::selection {
+    background-color: #000000;
+    color: #f5df50;
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+  }
+
+  .getInTouch {
+    h2 {
+      font-size: 40px;
+    }
+
+    p {
+      font-size: 21px;
+      margin: 24px 0;
+      line-height: 1.8;
+    }
+
+    .icons {
+      padding-top: 10px;
+    }
+  }
+
+  .form {
+    margin-right: 20px;
+
+    h2 {
+      font-size: 40px;
+      padding-bottom: 30px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto 30px;
+      font-size: 18px;
+
+      label {
+        margin-bottom: 0.5rem;
+      }
+
+      input,
+      textarea {
+        padding: 0.5rem 0;
+        border: none;
+        border-bottom: 2px solid #d7c446;
+        margin-bottom: 1rem;
+        resize: none;
+        background-color: transparent;
+        font-size: 18px;
+        transition: 0.3s ease-in-out;
+        font-family: 'Poppins-Regular', 'Golos_Text', sans-serif;
+
+        &:focus {
+          outline: none;
+          border-color: black;
+          background-color: rgba(59, 58, 48, 0.05);
+        }
+      }
+
+      textarea {
+        resize: none;
+        height: 150px;
+      }
+
+      button {
+        width: 150px;
+        background-color: black;
+        color: white;
+        border: none;
+        padding: 0.75rem 1rem;
+        cursor: pointer;
+        margin-top: 0.5rem;
+        transition: 0.5s;
+        font-family: 'Poppins-Regular', 'Golos_Text', sans-serif;
+        font-size: 16px;
+
+        &:hover {
+          background-color: #3d3d3d;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+    background-color: #f5df4f;
+    padding: 50px 0;
+
+    .wrapper {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .getInTouch {
+      h2 {
+        font-size: 30px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+
+    .form {
+      margin-right: 0;
+
+      h2 {
+        font-size: 30px;
+      }
+
+      form {
+        font-size: 16px;
+
+        input,
+        textarea {
+          font-size: 18px;
+        }
+
+        button {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #f5df50;
+    border-radius: 5px;
+    border: 2px solid #2a2828;
+
+    &:hover {
+      border: none;
+      background-color: #f5df50;
+    }
+
+    &:active {
+      background-color: #f5df50;
+    }
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: #2a2828;
+    border-radius: 5px;
+  }
+}

@@ -1,5 +1,5 @@
 import React, {FC} from 'react';
-import style from './Contacts.module.css'
+import style from './Contacts.module.scss'
 import {Container} from "../Container/Container";
 import {Animation} from "../Animation/Animation";
 import {SocialIconsFooter} from "./SocialIconsFooter/SocialIconsFooter";
