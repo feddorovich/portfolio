@@ -1,5 +1,5 @@
 import React, {FC} from 'react';
-import style from './Projects.module.css'
+import style from './Projects.module.scss'
 import {Container} from "../Container/Container";
 import {Project} from "./Project/Project";
 import {Animation} from "../Animation/Animation";

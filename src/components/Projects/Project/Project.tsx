@@ -1,5 +1,5 @@
 import React, {FC} from 'react';
-import style from './Project.module.css'
+import style from './Project.module.scss'
 import {Animation} from "../../Animation/Animation";
 
 type ProjectPropsType = {
