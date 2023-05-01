@@ -1,5 +1,5 @@
 import React, {FC, useEffect, useState} from 'react'
-import style from './Nav.module.css'
+import style from './Nav.module.scss'
 
 type NavPropsType = {
     isMenuOpen: boolean
