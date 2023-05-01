@@ -1,5 +1,5 @@
 import React, {FC, ReactNode, useState} from "react";
-import style from "./Animation.module.css";
+import style from "./Animation.module.scss";
 import 'animate.css';
 import {useInView} from "react-intersection-observer";
 
