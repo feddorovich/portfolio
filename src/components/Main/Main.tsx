@@ -1,5 +1,5 @@
 import React, {FC} from 'react';
-import style from './Main.module.css'
+import style from './Main.module.scss'
 import {Container} from "../Container/Container";
 import {Animation} from "../Animation/Animation";
 import ReactTypingEffect from 'react-typing-effect';

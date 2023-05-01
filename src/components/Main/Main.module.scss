@@ -1,0 +1,156 @@
+.mainBlock {
+  background-color: #f5df4f;
+  position: relative;
+
+  &::selection {
+    background-color: #000000;
+    color: #f5df50;
+  }
+
+  .arrow {
+    content: '↓';
+    bottom: 20px;
+    color: #000000;
+    font-size: 30px;
+    font-weight: bold;
+    height: 32px;
+    left: 50%;
+    line-height: 32px;
+    margin-left: -16px;
+    position: absolute;
+    text-align: center;
+    width: 32px;
+    opacity: 0;
+    animation: blink 3s infinite;
+  }
+
+  .wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 80px;
+  }
+
+  .text {
+    width: 650px;
+    word-break: break-word;
+
+    h1 {
+      font-family: 'Poppins-ExtraLight', 'Golos_Text', sans-serif;
+      font-size: 42px;
+      text-transform: uppercase;
+    }
+
+    .typingEffect {
+      font-family: 'Poppins-SemiBold', 'Golos_Text', sans-serif;
+      font-size: 100px;
+      text-transform: uppercase;
+      padding: 20px 0;
+    }
+
+    p {
+      font-size: 21px;
+    }
+  }
+
+  .photo {
+    width: 455px;
+    height: 455px;
+    background-color: #8a8a8a;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    border: 16px solid #F8F9FA;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+  }
+
+  @media screen and (max-width: 1399px) {
+    .photo {
+      width: 420px;
+      height: 420px;
+    }
+  }
+
+  @media screen and (max-width: 1199px) {
+    .photo {
+      width: 340px;
+      height: 340px;
+    }
+
+    .text {
+      width: 550px;
+      word-break: break-word;
+
+      h1 {
+        font-size: 32px;
+      }
+
+      .typingEffect {
+        font-size: 80px;
+      }
+
+      p {
+        font-size: 19px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 45px;
+      padding-top: 50px;
+    }
+
+    .photo {
+      width: 455px;
+      height: 455px;
+      max-width: 90vw;
+      max-height: 90vw;
+    }
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 90vw;
+      word-break: break-word;
+
+      h1 {
+        font-family: 'Poppins-Regular', 'Golos_Text', sans-serif;
+        font-weight: lighter;
+        font-size: 6vw;
+      }
+
+      .typingEffect {
+        font-size: 12vw;
+        padding: 12px 0;
+      }
+
+      p {
+        font-size: 3.5vw;
+      }
+    }
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
