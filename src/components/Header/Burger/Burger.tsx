@@ -1,5 +1,5 @@
 import React, {FC} from 'react';
-import './Burger.css';
+import './Burger.scss';
 
 type BurgerPropsType = {
     burger: boolean
