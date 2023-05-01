@@ -1,5 +1,5 @@
 import React, {FC} from 'react';
-import style from './Skills.module.css'
+import style from './Skills.module.scss'
 import {Skill} from "./Skill/Skill";
 import {Container} from "../Container/Container";
 import {Animation} from "../Animation/Animation";

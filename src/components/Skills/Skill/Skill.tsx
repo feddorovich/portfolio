@@ -1,5 +1,5 @@
 import React, {FC} from 'react';
-import style from './Skill.module.css'
+import style from './Skill.module.scss'
 import {Animation} from "../../Animation/Animation";
 import {IconType} from "react-icons/lib";
 

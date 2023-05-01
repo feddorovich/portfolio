@@ -5,15 +5,15 @@
     flex-direction: column;
     align-items: center;
     transition: 0.5s;
-}
 
-.skill:hover {
-    background-color: #f5df50;
-    border-radius: 5px;
-}
-.skill:hover .icon{
+&:hover {
+     background-color: #f5df50;
+     border-radius: 5px;
+
+.icon {
     color: white;
     transform: scale(1.1);
+}
 }
 
 .icon {
@@ -22,7 +22,7 @@
     transition: 0.5s;
 }
 
-.skill h3 {
+h3 {
     font-weight: 700;
     font-size: 22px;
     text-align: center;
@@ -30,20 +30,19 @@
     margin-top: 20px;
 }
 
-.skill p {
+p {
     text-align: justify;
     line-height: 1.4;
     cursor: default;
 }
 
 @media screen and (max-width: 991px) {
-    .skill {
-        width: 100%;
-    }
+    width: 100%;
 }
 
 @media screen and (max-width: 575px) {
-    .skill h3 {
+    h3 {
         font-size: 18px;
     }
+}
 }
