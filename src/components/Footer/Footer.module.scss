@@ -1,0 +1,38 @@
+.footer {
+  background-color: #020202;
+
+  .wrapper {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+
+    .status {
+      display: block;
+    }
+  }
+
+  .copyright {
+    a {
+      color: #f5df4f;
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  @media screen and (max-width: 575px) {
+    .wrapper {
+      flex-direction: column;
+      justify-content: space-evenly;
+
+      .status {
+        display: none;
+      }
+    }
+  }
+}
