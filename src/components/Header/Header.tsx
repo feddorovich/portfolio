@@ -1,5 +1,5 @@
 import React, {FC, useState} from 'react';
-import style from './Header.module.css'
+import style from './Header.module.scss'
 import {Nav} from "./Nav/Nav";
 import {Container} from "../Container/Container";
 import {Burger} from "./Burger/Burger";

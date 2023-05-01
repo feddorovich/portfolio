@@ -1,45 +1,44 @@
 .header {
-    background-color: #ffffff;
-    position: fixed;
-    width: 100%;
-    color: #000000;
-    text-align: center;
-    z-index: 1;
-    box-shadow: 0 -6px 10px 5px rgba(0, 0, 0, 0.2);
-}
+  background-color: #FFFFFF;
+  position: fixed;
+  width: 100%;
+  color: #000000;
+  text-align: center;
+  z-index: 1;
+  box-shadow: 0 -6px 10px 5px rgba(0, 0, 0, 0.2);
 
-.wrapper {
+  .wrapper {
     height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+  }
 
-.logo {
+  .logo {
     font-family: 'Poppins-Bold', 'Golos_Text', sans-serif;
     font-size: 30px;
     text-transform: uppercase;
     user-select: none;
     cursor: pointer;
-}
 
-.logo a{
-    text-decoration: none;
-    color: #000000;
-}
+    a {
+      text-decoration: none;
+      color: #000000;
+    }
+  }
 
-.icons {
+  .icons {
     display: flex;
     align-items: center;
     gap: 15px;
     position: relative;
-}
 
-.mobileMenuButton {
-    display: none;
-}
+    .mobileMenuButton {
+      display: none;
+    }
+  }
 
-.mobileMenu {
+  .mobileMenu {
     position: absolute;
     background-color: #FFFFFF;
     width: 80%;
@@ -49,19 +48,23 @@
     transform: translate(-50%, -50%);
     padding: 15px;
     box-shadow: 0 2px 10px 1px rgba(0, 0, 0, 0.2);
-}
+  }
 
-@media (max-width: 991px) {
+  @media (max-width: 991px) {
     .mainMenu {
-        display: none;
+      display: none;
     }
-    .mobileMenuButton {
-        display: block;
-    }
-}
 
-@media (max-width: 575px) {
-    .mobileMenu {
-        width: 100%;
+    .icons {
+      .mobileMenuButton {
+        display: block;
+      }
     }
+  }
+
+  @media (max-width: 575px) {
+    .mobileMenu {
+      width: 100%;
+    }
+  }
 }
