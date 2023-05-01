@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './SocialIcons.module.css';
+import style from './SocialIcons.module.scss';
 import { BsGithub, BsLinkedin, BsTelegram } from 'react-icons/bs';
 import { SiCodewars } from 'react-icons/si';
 
