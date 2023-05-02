@@ -6,13 +6,16 @@ type ProjectPropsType = {
     img: string
     title: string
     description: string
+    src: string
 }
 
 export const Project: FC<ProjectPropsType> = (props) => {
     return (
         <Animation className={style.project} animation={'animate__fadeInUp'} threshold={0.4}>
             <div className={style.photoWrapper}>
-                <div className={style.photo} style={{backgroundImage: `url(${props.img})`}}>
+                <div className={style.photo}
+                     style={{backgroundImage: `url(${props.img})`}}
+                     onClick={() => window.open(props.src, '_blank')}>
                     <button className={style.btn}>View</button>
                 </div>
             </div>

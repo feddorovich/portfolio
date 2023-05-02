@@ -4,6 +4,7 @@ import {Container} from "../Container/Container";
 import {Animation} from "../Animation/Animation";
 import ReactTypingEffect from 'react-typing-effect';
 import mainPhoto from "../../assets/image/mainPhoto.jpg"
+import main from "../../assets/image/main.jpg"
 
 export const Main: FC = () => {
     return (
@@ -12,7 +13,7 @@ export const Main: FC = () => {
                 <div className={style.wrapper}>
                     <Animation animation={'animate__zoomIn'} threshold={0.1}>
                         <div className={style.photo}
-                             style={{backgroundImage: `url(${mainPhoto})`}}
+                             style={{backgroundImage: `url(${main})`}}
                         ></div>
                     </Animation>
                     <div className={style.text}>
