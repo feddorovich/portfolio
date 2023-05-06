@@ -2,7 +2,7 @@
   background-color: #f5df4f;
   padding: 100px 0;
 
-  &::selection {
+  & ::selection {
     background-color: #000000;
     color: #f5df50;
   }
@@ -130,7 +130,7 @@
     }
   }
 
-  &::-webkit-scrollbar-thumb {
+  & ::-webkit-scrollbar-thumb {
     background-color: #f5df50;
     border-radius: 5px;
     border: 2px solid #2a2828;
@@ -145,8 +145,13 @@
     }
   }
 
-  &::-webkit-scrollbar-track {
+  & ::-webkit-scrollbar-track {
     background-color: #2a2828;
     border-radius: 5px;
   }
 }
+
+//.contactsBlock ::-webkit-scrollbar-track {
+//  background-color: #2a2828;
+//  border-radius: 5px;
+//}
