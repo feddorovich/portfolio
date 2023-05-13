@@ -9,20 +9,27 @@ type ProjectPropsType = {
     src: string
 }
 
+const onClickHandle = (src: string) => {
+    return () => window.open(src, '_blank')
+}
+
 export const Project: FC<ProjectPropsType> = (props) => {
     return (
         <Animation className={style.project} animation={'animate__fadeInUp'} threshold={0.4}>
             <div className={style.photoWrapper}>
                 <div className={style.photo}
                      style={{backgroundImage: `url(${props.img})`}}
-                     onClick={() => window.open(props.src, '_blank')}>
+                     onClick={onClickHandle(props.src)}>
                     <button className={style.btn}>View</button>
                 </div>
             </div>
             <div className={style.text}>
-                <h3 onClick={() => window.open(props.src, '_blank')}>{props.title}</h3>
+                <h3 onClick={onClickHandle(props.src)}>{props.title}</h3>
                 <p>{props.description}</p>
             </div>
+            <div className={style.btnView} onClick={onClickHandle(props.src)}>
+                <button>View</button>
+            </div>
         </Animation>
-    );
-};
+    )
+}
