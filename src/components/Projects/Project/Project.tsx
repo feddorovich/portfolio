@@ -20,7 +20,7 @@ export const Project: FC<ProjectPropsType> = (props) => {
                 </div>
             </div>
             <div className={style.text}>
-                <h3>{props.title}</h3>
+                <h3 onClick={() => window.open(props.src, '_blank')}>{props.title}</h3>
                 <p>{props.description}</p>
             </div>
         </Animation>
