@@ -104,6 +104,12 @@
       cursor: pointer;
       font-family: 'Poppins-Regular', 'Golos_Text', sans-serif;
       font-size: 16px;
+      transition: 0.5s;
+
+      &:active{
+        background-color: #f5df50;
+        color: #000000;
+      }
     }
 
     @media screen and (max-width: 1199px) {
