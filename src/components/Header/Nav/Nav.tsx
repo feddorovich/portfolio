@@ -1,5 +1,6 @@
 import React, {FC, useEffect, useState} from 'react'
 import style from './Nav.module.scss'
+import Theme from "../../Theme/Theme";
 
 type NavPropsType = {
     isMenuOpen: boolean
@@ -46,27 +47,31 @@ export const Nav: FC<NavPropsType> = (props) => {
         <div>
             {!props.isMenuOpen
                 ?
-                <nav className={style.nav}>
-                    {
-                        navData.map((a, i) => {
-                            return (
-                                <a key={i} className={active === a.link ? style.active : style.link} href={`#${a.link}`}
-                                   onClick={onChangeActiveLink(a.link)}>{a.name}</a>
-                            )
-                        })
-                    }
-                </nav>
+                    <div className={style.nav}>
+                        {
+                            navData.map((a, i) => {
+                                return (
+                                    <a key={i} className={active === a.link ? style.active : style.link}
+                                       href={`#${a.link}`}
+                                       onClick={onChangeActiveLink(a.link)}>{a.name}</a>
+                                )
+                            })
+                        }
+                        <Theme/>
+                    </div>
                 :
-                <nav className={style.navMobile}>
+                <div className={style.navMobile}>
                     {
                         navData.map((a, i) => {
                             return (
-                                <a key={i} className={active === a.link ? style.activeMobile : style.linkMobile} href={`#${a.link}`}
+                                <a key={i} className={active === a.link ? style.activeMobile : style.linkMobile}
+                                   href={`#${a.link}`}
                                    onClick={onChangeActiveLink(a.link)}>{a.name}</a>
                             )
                         })
                     }
-                </nav>
+                    <Theme/>
+                </div>
             }
         </div>
     );

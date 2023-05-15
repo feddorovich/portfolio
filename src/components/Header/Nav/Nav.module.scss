@@ -58,6 +58,8 @@
 }
 
 .navMobile {
+  background-color: var(#{--bgPrimaryDefault});
+  color: var(#{--textDefault});
   display: flex;
   flex-direction: column;
   gap: 5px;

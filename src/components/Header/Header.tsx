@@ -4,7 +4,6 @@ import {Nav} from "./Nav/Nav";
 import {Container} from "../Container/Container";
 import {Burger} from "./Burger/Burger";
 import {SocialIcons} from "./SocialIcons/SocialIcons";
-import Theme from '../Theme/Theme';
 
 export const Header: FC = () => {
     const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false)
@@ -23,7 +22,6 @@ export const Header: FC = () => {
                             Logo
                         </a>
                     </div>
-                    <Theme/>
                     <div className={isMenuOpen ? style.mobileMenu : style.mainMenu}>
                         <Nav isMenuOpen={isMenuOpen}
                              setIsMenuOpen={setIsMenuOpen}
