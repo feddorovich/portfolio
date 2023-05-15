@@ -75,7 +75,7 @@
         width: 150px;
         background-color: black;
         color: white;
-        border: none;
+        border: 1px solid #f5df50;
         padding: 0.75rem 1rem;
         cursor: pointer;
         margin-top: 0.5rem;
@@ -85,6 +85,12 @@
 
         &:hover {
           background-color: #3d3d3d;
+        }
+
+        &:active{
+          background-color: #d7c446;
+          color: #000000;
+          border: 1px solid #000000;
         }
       }
     }
