@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 const updateTheme = (theme: string) => {
     const root = document.querySelector(':root') as HTMLElement;
 
-    const components = ['bgPrimary', 'text', 'bgSecondary', 'textSecondary', 'boxShadow'];
+    const components = ['bgPrimary', 'text', 'bgSecondary', 'textSecondary', 'boxShadow', 'icons', 'buttons'];
     components.forEach(c => {
         root.style.setProperty(
             `--${c}Default`,

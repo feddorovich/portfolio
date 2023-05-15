@@ -13,6 +13,10 @@ $textColorSecondaryLight: rgba(0, 0, 0, 0.5);
 $textColorSecondaryDark: #a49f9f;
 $boxShadowLight: #E7E7E7;
 $boxShadowDark: #8a8888;
+$iconsLight: #4d555a;
+$iconsDark: #ffffff;
+$buttonsLight: #212529;
+$buttonsDark: #73777a;
 
 :root {
   --bgPrimaryLight: #{$backgroundPrimaryColorLight};
@@ -34,4 +38,12 @@ $boxShadowDark: #8a8888;
   --boxShadowLight: #{$boxShadowLight};
   --boxShadowDark: #{$boxShadowDark};
   --boxShadowDefault: var(#{--boxShadowLight});
+
+  --iconsLight: #{$iconsLight};
+  --iconsDark: #{$iconsDark};
+  --iconsDefault: var(#{--iconsLight});
+
+  --buttonsLight: #{$buttonsLight};
+  --buttonsDark: #{$buttonsDark};
+  --buttonsDefault: var(#{--buttonsLight});
   }
