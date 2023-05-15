@@ -1,5 +1,7 @@
+@import "../../common/styles/variables";
+
 .footer {
-  background-color: #020202;
+  background-color: $backgroundPrimaryColorDark;
 
   .wrapper {
     height: 70px;

@@ -1,11 +1,13 @@
+@import "../../common/styles/variables";
+
 .header {
-  background-color: #FFFFFF;
+  background-color: var(#{--bgPrimaryDefault});
+  color: var(#{--textDefault});
   position: fixed;
   width: 100%;
-  color: #000000;
   text-align: center;
   z-index: 1;
-  box-shadow: 0 -6px 10px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 -6px 10px 5px var(#{--boxShadowDefault});
 
   .wrapper {
     height: 70px;
@@ -23,7 +25,7 @@
 
     a {
       text-decoration: none;
-      color: #000000;
+      color: var(#{--textDefault});
     }
   }
 

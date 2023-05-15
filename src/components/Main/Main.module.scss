@@ -1,5 +1,8 @@
+@import "../../common/styles/variables";
+
 .mainBlock {
-  background-color: #f5df4f;
+  background-color: $primaryColor;
+  color: $textColorLight;
   position: relative;
 
   & ::selection {

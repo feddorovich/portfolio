@@ -4,11 +4,15 @@ $bgColorPrimary: #ffffff;
 $bgColorSecondary: #f8f9fa;
 
 $backgroundPrimaryColorLight: #FFFFFF;
-$backgroundPrimaryColorDark: #000000;
+$backgroundPrimaryColorDark: #212529;
 $backgroundSecondaryColorLight:  #f8f9fa;
-$backgroundSecondaryColorDark: #212529;
+$backgroundSecondaryColorDark: #1d2123;
 $textColorLight: #212529;
 $textColorDark: #FFFFFF;
+$textColorSecondaryLight: rgba(0, 0, 0, 0.5);
+$textColorSecondaryDark: #a49f9f;
+$boxShadowLight: #E7E7E7;
+$boxShadowDark: #8a8888;
 
 :root {
   --bgPrimaryLight: #{$backgroundPrimaryColorLight};
@@ -22,4 +26,12 @@ $textColorDark: #FFFFFF;
   --textLight: #{$textColorLight};
   --textDark: #{$textColorDark};
   --textDefault: var(#{--textLight});
+
+  --textSecondaryLight: #{$textColorSecondaryLight};
+  --textSecondaryDark: #{$textColorSecondaryDark};
+  --textSecondaryDefault: var(#{--textSecondaryLight});
+
+  --boxShadowLight: #{$boxShadowLight};
+  --boxShadowDark: #{$boxShadowDark};
+  --boxShadowDefault: var(#{--boxShadowLight});
   }

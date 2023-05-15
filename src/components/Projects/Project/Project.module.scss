@@ -1,11 +1,14 @@
+@import "../../../common/styles/variables";
+
 .project {
+  background-color: var(#{--bgPrimaryDefault});
+  color: var(#{--textDefault});
   border: 2px solid #E7E7E7;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  box-shadow: 0 0 10px 1px #E7E7E7;
-  background: #FFFFFF;
+  box-shadow: 0 0 10px 1px var(#{--boxShadowDefault});
   overflow: hidden;
   position: relative;
 
@@ -82,7 +85,7 @@
     }
 
     p {
-      color: rgba(0, 0, 0, 0.5);
+      color: var(#{--textSecondaryDefault});
       text-align: justify;
       line-height: 1.4;
       border-radius: 9px;

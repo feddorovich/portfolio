@@ -1,3 +1,5 @@
+@import "../../../common/styles/variables";
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -9,7 +11,7 @@
     text-transform: uppercase;
     user-select: none;
     cursor: pointer;
-    color: #000000;
+    color: var(#{--textDefault});
     text-decoration: none;
     position: relative;
     transition: .5s;
@@ -38,7 +40,7 @@
     text-transform: uppercase;
     user-select: none;
     cursor: pointer;
-    color: #000000;
+    color: var(#{--textDefault});
     text-decoration: none;
     position: relative;
 
@@ -67,7 +69,7 @@
     text-transform: uppercase;
     user-select: none;
     cursor: pointer;
-    color: #000000;
+    color: var(#{--textDefault});
     text-decoration: none;
     padding: 8px 0;
     position: relative;

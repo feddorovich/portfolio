@@ -1,3 +1,5 @@
+@import "../../../common/styles/variables";
+
 .socialIcons {
   display: flex;
   align-items: center;
@@ -7,7 +9,8 @@
 
     .cd, .tg, .git, .link {
       font-size: 20px;
-      color: #4d555a;
+      //color: #4d555a;
+      color: var(#{--textDefault});
       transition: .2s ease-in-out;
 
       &:hover {
@@ -24,7 +27,7 @@
     }
 
     .git:hover {
-      color: #000000;
+      color: var(#{--textDefault});
     }
 
     .link:hover {

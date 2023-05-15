@@ -1,5 +1,8 @@
+@import "../../common/styles/variables";
+
 .contactsBlock {
-  background-color: #f5df4f;
+  background-color: $primaryColor;
+  color: $textColorLight;
   padding: 100px 0;
 
   & ::selection {
@@ -73,7 +76,7 @@
 
       button {
         width: 150px;
-        background-color: black;
+        background-color: $backgroundPrimaryColorDark;
         color: white;
         border: 1px solid #f5df50;
         padding: 0.75rem 1rem;
