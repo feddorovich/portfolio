@@ -1,33 +1,36 @@
-import React, { useState, useEffect } from 'react';
+import React, {useState, useEffect, ReactNode} from 'react'
+import style from './Theme.module.scss'
+
+type ThemeType = {
+    children: ReactNode
+}
 
 const updateTheme = (theme: string) => {
-    const root = document.querySelector(':root') as HTMLElement;
+    const root = document.querySelector(':root') as HTMLElement
 
-    const components = ['bgPrimary', 'text', 'bgSecondary', 'textSecondary', 'boxShadow', 'icons', 'buttons'];
+    const components = ['bgPrimary', 'text', 'bgSecondary', 'textSecondary', 'boxShadow', 'icons', 'buttons']
     components.forEach(c => {
         root.style.setProperty(
             `--${c}Default`,
             `var(--${c}${theme})`
-        );
-    });
-};
+        )
+    })
+}
 
-const Theme: React.FC = () => {
-    const [theme, setTheme] = useState<string>('Light');
+export const Theme: React.FC<ThemeType> = ({children}) => {
+    const [theme, setTheme] = useState<string>('Light')
 
     const changeTheme = () => {
-        setTheme(theme === 'Light' ? 'Dark' : 'Light');
+        setTheme(theme === 'Light' ? 'Dark' : 'Light')
     };
 
     useEffect(() => {
-        updateTheme(theme);
-    }, [theme]);
+        updateTheme(theme)
+    }, [theme])
 
     return (
-        <div>
-            <button onClick={changeTheme}>Change Theme</button>
+        <div onClick={changeTheme}>
+            {children}
         </div>
-    );
-};
-
-export default Theme;
+    )
+}

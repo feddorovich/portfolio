@@ -1,6 +1,5 @@
 import React, {FC, useEffect, useState} from 'react'
 import style from './Nav.module.scss'
-import Theme from "../../Theme/Theme";
 
 type NavPropsType = {
     isMenuOpen: boolean
@@ -57,7 +56,6 @@ export const Nav: FC<NavPropsType> = (props) => {
                                 )
                             })
                         }
-                        <Theme/>
                     </div>
                 :
                 <div className={style.navMobile}>
@@ -70,7 +68,6 @@ export const Nav: FC<NavPropsType> = (props) => {
                             )
                         })
                     }
-                    <Theme/>
                 </div>
             }
         </div>
