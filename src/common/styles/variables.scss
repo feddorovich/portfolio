@@ -1,4 +1,25 @@
 $textColor: #212529;
 $primaryColor: #f5df4e;
-$bgColor: #ffffff;
-$bgSecondColor: #f8f9fa;
+$bgColorPrimary: #ffffff;
+$bgColorSecondary: #f8f9fa;
+
+$backgroundPrimaryColorLight: #FFFFFF;
+$backgroundPrimaryColorDark: #000000;
+$backgroundSecondaryColorLight:  #f8f9fa;
+$backgroundSecondaryColorDark: #212529;
+$textColorLight: #212529;
+$textColorDark: #FFFFFF;
+
+:root {
+  --bgPrimaryLight: #{$backgroundPrimaryColorLight};
+  --bgPrimaryDark: #{$backgroundPrimaryColorDark};
+  --bgPrimaryDefault: var(#{--bgPrimaryLight});
+
+  --bgSecondaryLight: #{$backgroundSecondaryColorLight};
+  --bgSecondaryDark: #{$backgroundSecondaryColorDark};
+  --bgSecondaryDefault: var(#{--bgSecondaryLight});
+
+  --textLight: #{$textColorLight};
+  --textDark: #{$textColorDark};
+  --textDefault: var(#{--textLight});
+  }

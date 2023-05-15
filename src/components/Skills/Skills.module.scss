@@ -1,5 +1,8 @@
+@import "../../common/styles/variables";
+
 .skillsBlock {
-  background-color: #ffffff;
+  background-color: var(#{--bgPrimaryDefault});
+  color: var(#{--textDefault});
 
   .wrapper {
     min-height: calc(100vh - 70px);
