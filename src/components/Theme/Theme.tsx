@@ -15,6 +15,13 @@ const updateTheme = (theme: string) => {
 }
 
 export const Theme: React.FC = () => {
+    useEffect(() => {
+        let localStorageDarkMode = localStorage.getItem('darkMode')
+        if (localStorageDarkMode !== null) {
+            setTheme(JSON.parse(localStorageDarkMode))
+        }
+    }, [])
+
     const [theme, setTheme] = useState<string>('Light')
 
     const changeTheme = () => {
@@ -22,6 +29,7 @@ export const Theme: React.FC = () => {
     };
 
     useEffect(() => {
+        localStorage.setItem('darkMode', JSON.stringify(theme))
         updateTheme(theme)
     }, [theme])
 
