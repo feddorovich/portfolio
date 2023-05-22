@@ -1,9 +1,6 @@
-import React, {useState, useEffect, ReactNode} from 'react'
+import React, {useState, useEffect} from 'react'
 import style from './Theme.module.scss'
-
-type ThemeType = {
-    children: ReactNode
-}
+import {BsMoon, BsSun} from "react-icons/bs";
 
 const updateTheme = (theme: string) => {
     const root = document.querySelector(':root') as HTMLElement
@@ -17,7 +14,7 @@ const updateTheme = (theme: string) => {
     })
 }
 
-export const Theme: React.FC<ThemeType> = ({children}) => {
+export const Theme: React.FC = () => {
     const [theme, setTheme] = useState<string>('Light')
 
     const changeTheme = () => {
@@ -29,8 +26,8 @@ export const Theme: React.FC<ThemeType> = ({children}) => {
     }, [theme])
 
     return (
-        <div onClick={changeTheme}>
-            {children}
+        <div onClick={changeTheme} className={style.icon}>
+            {theme === 'Light' ? <BsMoon/> : <BsSun/>}
         </div>
     )
 }
