@@ -3,10 +3,9 @@
 .socialIcons {
   display: flex;
   align-items: center;
+  gap: 15px;
 
   .iconLink {
-    margin-right: 15px;
-
     .cd, .tg, .git, .link {
       font-size: 20px;
       color: var(#{--iconsDefault});

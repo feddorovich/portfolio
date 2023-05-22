@@ -2,10 +2,12 @@ import React from 'react';
 import style from './SocialIcons.module.scss';
 import { BsGithub, BsLinkedin, BsTelegram } from 'react-icons/bs';
 import { SiCodewars } from 'react-icons/si';
+import {Theme} from "../../Theme/Theme";
 
 export const SocialIcons = () => {
     return (
         <div className={style.socialIcons}>
+            <Theme/>
             <a href="https://www.linkedin.com/in/feddorovich/" target={'_blank'} className={style.iconLink}>
                 <BsLinkedin className={style.link} />
             </a>
