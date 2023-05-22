@@ -100,7 +100,7 @@
     button {
       width: 100%;
       background-color: var(#{--buttonsDefault});
-      color: #ffffff;
+      color: var(#{--bgPrimaryDefault});
       border: none;
       padding: 10px;
       cursor: pointer;
