@@ -19,7 +19,7 @@ export const Header: FC = () => {
                 <div className={style.wrapper}>
                     <div className={style.logo}>
                         <a href={'#main'}>
-                            Logo
+                            Fedrr
                         </a>
                     </div>
                     <div className={isMenuOpen ? style.mobileMenu : style.mainMenu}>
