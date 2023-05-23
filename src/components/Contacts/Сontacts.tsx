@@ -40,6 +40,9 @@ export const Contacts: FC = () => {
                             <div className={style.icons}>
                                 <SocialIconsFooter/>
                             </div>
+                            <h3>
+                                feddorovich@outlook.com
+                            </h3>
                         </div>
                     </Animation>
                     <Animation animation={'animate__fadeInRight'} threshold={0.4}>
