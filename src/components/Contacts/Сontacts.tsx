@@ -1,10 +1,29 @@
-import React, {FC} from 'react';
+import React, {FC, useRef} from 'react';
 import style from './Contacts.module.scss'
 import {Container} from "../Container/Container";
 import {Animation} from "../Animation/Animation";
 import {SocialIconsFooter} from "./SocialIconsFooter/SocialIconsFooter";
+import emailjs, {EmailJSResponseStatus} from '@emailjs/browser';
 
 export const Contacts: FC = () => {
+
+    const form = useRef<HTMLFormElement>(null);
+
+    const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+
+        if (form.current) {
+            emailjs.sendForm('service_a4thxrn', 'template_ulaar7c', form.current, 'J3VuL-G6B0KqO8oIH')
+                .then((result: EmailJSResponseStatus) => {
+                    alert('Your message has been sent successfully.');
+                    form.current?.reset();
+                })
+                .catch((error) => {
+                    alert('Error sending message. Write to feddorovich@outlook.com');
+                });
+        }
+    };
+
     return (
         <section className={style.contactsBlock} id={'contacts'}>
             <Container>
@@ -26,7 +45,7 @@ export const Contacts: FC = () => {
                     <Animation animation={'animate__fadeInRight'} threshold={0.4}>
                         <div className={style.form}>
                             <h2>Contact</h2>
-                            <form>
+                            <form ref={form} onSubmit={sendEmail}>
                                 <label htmlFor="name">What is Your Name:</label>
                                 <input type="text" id="name" name="name"/>
 
