@@ -4,9 +4,11 @@ import {Container} from "../Container/Container";
 import {Animation} from "../Animation/Animation";
 import {SocialIconsFooter} from "./SocialIconsFooter/SocialIconsFooter";
 import emailjs, {EmailJSResponseStatus} from '@emailjs/browser';
+import {Alert} from "./Alert/Alert";
 
 export const Contacts: FC = () => {
     const [isLoading, setIsLoading] = useState<boolean>(false)
+    const [message, setMessage] = useState<string>('')
 
     const form = useRef<HTMLFormElement>(null)
 
@@ -17,11 +19,13 @@ export const Contacts: FC = () => {
             setIsLoading(true)
             emailjs.sendForm('service_zbupw4l', 'template_ulaar7c', form.current, 'J3VuL-G6B0KqO8oIH')
                 .then((result: EmailJSResponseStatus) => {
-                    alert('Your message has been sent successfully.')
-                    form.current?.reset();
+                    // alert('Your message has been successfully delivered.')
+                    setMessage('Your message has been successfully delivered.')
+                    form.current?.reset()
                 })
                 .catch((error) => {
-                    alert('Error sending message. Write to feddorovich@outlook.com')
+                    // alert('Error sending message. Write to feddorovich@outlook.com')
+                    setMessage('Error sending message. Write to feddorovich@outlook.com.')
                 })
                 .finally(() => {
                     setIsLoading(false)
@@ -71,10 +75,13 @@ export const Contacts: FC = () => {
 
                                 <button type="submit">Send</button>
                             </form>
+                            {/*<button onClick={() => setMessage('Your message has been successfully delivered.')}>message</button>*/}
+                            {/*<button onClick={() => setMessage('Error sending message. Write to feddorovich@outlook.com.')}>message2</button>*/}
                         </div>
                     </Animation>
                 </div>
             </Container>
+            <Alert message={message}/>
         </section>
-    );
-};
+    )
+}
