@@ -176,24 +176,27 @@
   justify-content: center;
   align-items: center;
   top: -16px;
-  right: -8px;
+  right: -9px;
   border-radius: 10px;
+
+  .loading {
+    border: 3.5px solid #f3f3f3;
+    border-top: 3.5px solid $textColor;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 1.3s linear infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 }
 
-.loading {
-  border: 3.5px solid #f3f3f3;
-  border-top: 3.5px solid $textColor;
-  border-radius: 50%;
-  width: 80px;
-  height: 80px;
-  animation: spin 1.3s linear infinite;
-}
 
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
+

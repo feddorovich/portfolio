@@ -17,7 +17,7 @@ export const Alert: FC<AlertPropsType> = (props) => {
         setMessage(props.message)
         const timer = setTimeout(() => {
             setMessage('')
-        }, 5000)
+        }, 8000)
 
         return () => {
             clearTimeout(timer)
