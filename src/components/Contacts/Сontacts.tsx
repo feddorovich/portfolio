@@ -1,4 +1,4 @@
-import React, {FC, useRef} from 'react';
+import React, {FC, useRef, useState} from 'react';
 import style from './Contacts.module.scss'
 import {Container} from "../Container/Container";
 import {Animation} from "../Animation/Animation";
@@ -6,23 +6,28 @@ import {SocialIconsFooter} from "./SocialIconsFooter/SocialIconsFooter";
 import emailjs, {EmailJSResponseStatus} from '@emailjs/browser';
 
 export const Contacts: FC = () => {
+    const [isLoading, setIsLoading] = useState<boolean>(false)
 
-    const form = useRef<HTMLFormElement>(null);
+    const form = useRef<HTMLFormElement>(null)
 
     const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
+        e.preventDefault()
 
         if (form.current) {
+            setIsLoading(true)
             emailjs.sendForm('service_a4thxrn', 'template_ulaar7c', form.current, 'J3VuL-G6B0KqO8oIH')
                 .then((result: EmailJSResponseStatus) => {
-                    alert('Your message has been sent successfully.');
+                    alert('Your message has been sent successfully.')
                     form.current?.reset();
                 })
                 .catch((error) => {
-                    alert('Error sending message. Write to feddorovich@outlook.com');
-                });
+                    alert('Error sending message. Write to feddorovich@outlook.com')
+                })
+                .finally(() => {
+                    setIsLoading(false)
+                })
         }
-    };
+    }
 
     return (
         <section className={style.contactsBlock} id={'contacts'}>
@@ -31,10 +36,13 @@ export const Contacts: FC = () => {
                     <Animation animation={'animate__fadeInLeft'} threshold={0.4}>
                         <div className={style.getInTouch}>
                             <h2>Let's get in touch</h2>
-                            <p>Thank you for visiting my portfolio page! If you are looking for an experienced and talented front-end developer
-                                who can help you create a unique and functional web interface, then you are in the right place.</p>
+                            <p>Thank you for visiting my portfolio page! If you are looking for an experienced and
+                                talented front-end developer
+                                who can help you create a unique and functional web interface, then you are in the right
+                                place.</p>
                             <p>
-                                If you have any questions, comments, or proposals, please do not hesitate to contact me through
+                                If you have any questions, comments, or proposals, please do not hesitate to contact me
+                                through
                                 the contact form. I will be happy to discuss all the details.
                             </p>
                             <div className={style.icons}>
@@ -47,6 +55,9 @@ export const Contacts: FC = () => {
                     </Animation>
                     <Animation animation={'animate__fadeInRight'} threshold={0.4}>
                         <div className={style.form}>
+                            {isLoading && <div className={style.loadingWrapper}>
+                                <div id={'hw15-loading'} className={style.loading}></div>
+                            </div>}
                             <h2>Contact</h2>
                             <form ref={form} onSubmit={sendEmail}>
                                 <label htmlFor="name">What is Your Name:</label>
