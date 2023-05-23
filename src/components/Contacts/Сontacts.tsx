@@ -15,7 +15,7 @@ export const Contacts: FC = () => {
 
         if (form.current) {
             setIsLoading(true)
-            emailjs.sendForm('service_a4thxrn', 'template_ulaar7c', form.current, 'J3VuL-G6B0KqO8oIH')
+            emailjs.sendForm('service_zbupw4l', 'template_ulaar7c', form.current, 'J3VuL-G6B0KqO8oIH')
                 .then((result: EmailJSResponseStatus) => {
                     alert('Your message has been sent successfully.')
                     form.current?.reset();
