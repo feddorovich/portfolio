@@ -92,6 +92,21 @@
         font-family: 'Poppins-Regular', 'Golos_Text', sans-serif;
         font-size: 16px;
 
+        &:disabled {
+          opacity: 0.5;
+          cursor: default;
+        }
+
+        &:disabled:hover {
+          background-color: $backgroundPrimaryColorDark;
+        }
+
+        &:disabled:active {
+          background-color: $backgroundPrimaryColorDark;
+          color: white;
+          border: 1px solid #f5df50;
+        }
+
         &:hover {
           background-color: #3d3d3d;
         }

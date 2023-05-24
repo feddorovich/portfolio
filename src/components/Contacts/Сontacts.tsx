@@ -9,8 +9,15 @@ import {Alert} from "./Alert/Alert";
 export const Contacts: FC = () => {
     const [isLoading, setIsLoading] = useState<boolean>(false)
     const [message, setMessage] = useState<string>('')
+    const [isMessageEmpty, setIsMessageEmpty] = useState<boolean>(true)
 
     const form = useRef<HTMLFormElement>(null)
+
+    const handleMessageChange = () => {
+        if (form.current) {
+            setIsMessageEmpty(form.current.message.value === '');
+        }
+    }
 
     const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault()
@@ -32,6 +39,7 @@ export const Contacts: FC = () => {
                 })
         }
     }
+
 
     return (
         <section className={style.contactsBlock} id={'contacts'}>
@@ -71,9 +79,9 @@ export const Contacts: FC = () => {
                                 <input type="email" id="email" name="email"/>
 
                                 <label htmlFor="message">Message:</label>
-                                <textarea id="message" name="message" rows={5}></textarea>
+                                <textarea id="message" name="message" rows={5} onChange={handleMessageChange}></textarea>
 
-                                <button type="submit">Send</button>
+                                <button type="submit" disabled={isMessageEmpty}>Send</button>
                             </form>
                         </div>
                     </Animation>
