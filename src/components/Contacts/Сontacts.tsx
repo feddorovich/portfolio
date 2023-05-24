@@ -36,6 +36,7 @@ export const Contacts: FC = () => {
                 })
                 .finally(() => {
                     setIsLoading(false)
+                    setIsMessageEmpty(true)
                 })
         }
     }
