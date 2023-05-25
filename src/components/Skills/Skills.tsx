@@ -16,7 +16,7 @@ type SkillDataType = {
 
 const skillData: SkillDataType[] = [
     {Icon: SiReact, title: 'React'},
-    {Icon: SiRedux, title: 'Redux'},
+    {Icon: SiRedux, title: 'Redux | Toolkit'},
     {Icon: SiJavascript, title: 'JavaScript'},
     {Icon: SiTypescript, title: 'TypeScript'},
     {Icon: SiVuedotjs, title: 'Vue'},
