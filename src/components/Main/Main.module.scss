@@ -1,4 +1,4 @@
-@import "../../common/styles/variables";
+@import '../../common/styles/variables';
 
 .mainBlock {
   background-color: $primaryColor;
@@ -66,8 +66,8 @@
     background-size: cover;
     background-position: center;
     border-radius: 50%;
-    border: 16px solid #F8F9FA;
-    box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
+    border: 16px solid #f8f9fa;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
   }
 
   @media screen and (max-width: 1399px) {

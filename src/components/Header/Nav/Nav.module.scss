@@ -1,4 +1,4 @@
-@import "../../../common/styles/variables";
+@import '../../../common/styles/variables';
 
 .nav {
   display: flex;
@@ -14,11 +14,11 @@
     color: var(#{--textDefault});
     text-decoration: none;
     position: relative;
-    transition: .5s;
+    transition: 0.5s;
 
     &::after {
       opacity: 0;
-      content: "";
+      content: '';
       position: absolute;
       left: 50%;
       transform: translateX(-50%) scaleX(0);
@@ -45,7 +45,7 @@
     position: relative;
 
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
@@ -77,7 +77,7 @@
     position: relative;
 
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
@@ -101,7 +101,7 @@
     position: relative;
 
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       left: 50%;
       transform: translateX(-50%);

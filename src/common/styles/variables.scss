@@ -3,15 +3,15 @@ $primaryColor: #f5df4e;
 $bgColorPrimary: #ffffff;
 $bgColorSecondary: #f8f9fa;
 
-$backgroundPrimaryColorLight: #FFFFFF;
+$backgroundPrimaryColorLight: #ffffff;
 $backgroundPrimaryColorDark: #212529;
-$backgroundSecondaryColorLight:  #f8f9fa;
+$backgroundSecondaryColorLight: #f8f9fa;
 $backgroundSecondaryColorDark: #1d2123;
 $textColorLight: #212529;
-$textColorDark: #FFFFFF;
+$textColorDark: #ffffff;
 $textColorSecondaryLight: rgba(0, 0, 0, 0.5);
 $textColorSecondaryDark: #a49f9f;
-$boxShadowLight: #E7E7E7;
+$boxShadowLight: #e7e7e7;
 $boxShadowDark: #3d3a3a;
 $iconsLight: #4d555a;
 $iconsDark: #ffffff;
@@ -46,4 +46,4 @@ $buttonsDark: #f5df50;
   --buttonsLight: #{$buttonsLight};
   --buttonsDark: #{$buttonsDark};
   --buttonsDefault: var(#{--buttonsLight});
-  }
+}

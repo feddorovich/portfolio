@@ -1,34 +1,34 @@
 @font-face {
-    font-family: 'Golos_Text';
-    src: url('/src/assets/fonts/Golos_Text/GolosText-VariableFont_wght.ttf');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Golos_Text';
+  src: url('/src/assets/fonts/Golos_Text/GolosText-VariableFont_wght.ttf');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Poppins-Regular';
-    src: url('/src/assets/fonts/Poppins/Poppins-Regular.ttf');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Poppins-Regular';
+  src: url('/src/assets/fonts/Poppins/Poppins-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Poppins-ExtraLight';
-    src: url('/src/assets/fonts/Poppins/Poppins-ExtraLight.ttf');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Poppins-ExtraLight';
+  src: url('/src/assets/fonts/Poppins/Poppins-ExtraLight.ttf');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Poppins-SemiBold';
-    src: url('/src/assets/fonts/Poppins/Poppins-SemiBold.ttf');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Poppins-SemiBold';
+  src: url('/src/assets/fonts/Poppins/Poppins-SemiBold.ttf');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Poppins-Bold';
-    src: url('/src/assets/fonts/Poppins/Poppins-Bold.ttf');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Poppins-Bold';
+  src: url('/src/assets/fonts/Poppins/Poppins-Bold.ttf');
+  font-weight: normal;
+  font-style: normal;
 }

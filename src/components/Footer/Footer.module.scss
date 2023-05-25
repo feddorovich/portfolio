@@ -1,4 +1,4 @@
-@import "../../common/styles/variables";
+@import '../../common/styles/variables';
 
 .footer {
   background-color: $backgroundPrimaryColorDark;
@@ -9,7 +9,7 @@
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    color: #FFFFFF;
+    color: #ffffff;
 
     .status {
       display: block;

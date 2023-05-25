@@ -1,4 +1,4 @@
-@import "../../../common/styles/variables";
+@import '../../../common/styles/variables';
 
 .socialIcons {
   display: flex;
@@ -6,10 +6,13 @@
   gap: 15px;
 
   .iconLink {
-    .cd, .tg, .git, .link {
+    .cd,
+    .tg,
+    .git,
+    .link {
       font-size: 20px;
       color: var(#{--iconsDefault});
-      transition: .2s ease-in-out;
+      transition: 0.2s ease-in-out;
 
       &:hover {
         transform: scale(1.2);

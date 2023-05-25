@@ -6,10 +6,13 @@
     margin-right: 20px;
   }
 
-  .cd, .tg, .git, .link {
+  .cd,
+  .tg,
+  .git,
+  .link {
     font-size: 26px;
     color: #4d555a;
-    transition: .2s ease-in-out;
+    transition: 0.2s ease-in-out;
 
     &:hover {
       transform: scale(1.2);
