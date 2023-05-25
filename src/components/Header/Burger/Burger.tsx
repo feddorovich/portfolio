@@ -14,7 +14,7 @@ export const Burger: FC<BurgerPropsType> = (props) => {
 
     return (
         <div onClick={props.onClick}>
-            <button className={`burger-button ${props.burger ? 'open' : ''}`} onClick={handleClick}>
+            <button className={`burger-button ${props.burger ? 'open' : ''}`} onClick={handleClick} aria-label={'Open mobile menu'}>
                 <span className="burger-line"></span>
                 <span className="burger-line"></span>
                 <span className="burger-line"></span>
