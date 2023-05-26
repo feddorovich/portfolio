@@ -58,10 +58,15 @@ export const Contacts: FC = () => {
                 If you have any questions, comments, or proposals, please do not hesitate to contact me through the
                 contact form. I will be happy to discuss all the details.
               </p>
+              <h3>
+                Write:
+              </h3>
+              <h4>
+                feddorovich@outlook.com
+              </h4>
               <div className={style.icons}>
                 <SocialIconsFooter />
               </div>
-              <h3>feddorovich@outlook.com</h3>
             </div>
           </Animation>
           <Animation animation={'animate__fadeInRight'} threshold={0.4}>
