@@ -4,6 +4,7 @@ import { Nav } from './Nav/Nav'
 import { Container } from '../Container/Container'
 import { Burger } from './Burger/Burger'
 import { SocialIcons } from './SocialIcons/SocialIcons'
+import 'animate.css'
 
 export const Header: FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false)
@@ -20,7 +21,7 @@ export const Header: FC = () => {
           <div className={style.logo}>
             <a href={'#main'}>Fedrr</a>
           </div>
-          <div className={isMenuOpen ? style.mobileMenu : style.mainMenu}>
+          <div className={isMenuOpen ? `animate__animated animate__fadeInDown animate__faster ${style.mobileMenu}`: style.mainMenu}>
             <Nav isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} burger={burger} setBurger={setBurger} />
           </div>
           <div className={style.icons}>
