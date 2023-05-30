@@ -79,13 +79,13 @@ export const Contacts: FC = () => {
               <h2>Contact</h2>
               <form ref={form} onSubmit={sendEmail}>
                 <label htmlFor="name">What is Your Name:</label>
-                <input type="text" id="name" name="name" />
+                <input type="text" id="name" name="name" required/>
 
                 <label htmlFor="email">E-mail:</label>
-                <input type="email" id="email" name="email" />
+                <input type="email" id="email" name="email" required/>
 
                 <label htmlFor="message">Message:</label>
-                <textarea id="message" name="message" rows={5} onChange={handleMessageChange}></textarea>
+                <textarea id="message" name="message" rows={5} onChange={handleMessageChange} required></textarea>
 
                 <button type="submit" disabled={isMessageEmpty}>
                   Send
