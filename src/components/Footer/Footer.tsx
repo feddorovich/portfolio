@@ -7,7 +7,7 @@ export const Footer: FC = () => {
   return (
     <footer className={style.footer}>
       <Container>
-        <Animation animation={'animate__fadeInLeft'} threshold={0.4} className={style.wrapper}>
+        <Animation animation={'animate__fadeInLeft'} threshold={0.1} className={style.wrapper}>
           <div className={style.copyright}>
             {`© ${new Date().getFullYear()} `}
             <a target={'_blank'} href="https://github.com/feddorovich" rel="noreferrer">
