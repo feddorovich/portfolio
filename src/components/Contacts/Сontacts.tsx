@@ -9,15 +9,15 @@ import { Alert } from './Alert/Alert'
 export const Contacts: FC = () => {
   const [isLoading, setIsLoading] = useState<boolean>(false)
   const [message, setMessage] = useState<string>('')
-  const [isMessageEmpty, setIsMessageEmpty] = useState<boolean>(true)
+  // const [isMessageEmpty, setIsMessageEmpty] = useState<boolean>(true)
 
   const form = useRef<HTMLFormElement>(null)
 
-  const handleMessageChange = () => {
-    if (form.current) {
-      setIsMessageEmpty(form.current.message.value === '')
-    }
-  }
+  // const handleMessageChange = () => {
+  //   if (form.current) {
+  //     setIsMessageEmpty(form.current.message.value === '')
+  //   }
+  // }
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
@@ -37,7 +37,7 @@ export const Contacts: FC = () => {
         })
         .finally(() => {
           setIsLoading(false)
-          setIsMessageEmpty(true)
+          // setIsMessageEmpty(true)
         })
     }
   }
@@ -85,9 +85,9 @@ export const Contacts: FC = () => {
                 <input type="email" id="email" name="email" required/>
 
                 <label htmlFor="message">Message:</label>
-                <textarea id="message" name="message" rows={5} onChange={handleMessageChange} required></textarea>
+                <textarea id="message" name="message" rows={5} required></textarea>
 
-                <button type="submit" disabled={isMessageEmpty}>
+                <button type="submit">
                   Send
                 </button>
               </form>
