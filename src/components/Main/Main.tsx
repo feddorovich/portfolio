@@ -4,6 +4,7 @@ import { Container } from '../Container/Container'
 import { Animation } from '../Animation/Animation'
 import ReactTypingEffect from 'react-typing-effect'
 import main from '../../assets/image/main.jpg'
+import { FiArrowDownCircle } from 'react-icons/fi'
 
 export const Main: FC = () => {
   return (
@@ -19,10 +20,13 @@ export const Main: FC = () => {
               <ReactTypingEffect text={['developer', 'react dev']} speed={100} typingDelay={1000} />
             </div>
             <p>Welcome to my portfolio</p>
+            <div className={style.cv}>
+              <a href={'#contacts'}><button>Contact ME</button></a>
+              <a href={'/cv/FedorovichSergeyCV.pdf'} target={'_blank'}><h3>Download CV <FiArrowDownCircle /></h3></a>
+            </div>
           </div>
         </div>
         <a href={'#skills'}>
-          {' '}
           <div className={style.arrow}>↓</div>
         </a>
       </Container>
