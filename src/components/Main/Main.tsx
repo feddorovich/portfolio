@@ -20,10 +20,10 @@ export const Main: FC = () => {
               <ReactTypingEffect text={['developer', 'react dev']} speed={100} typingDelay={1000} />
             </div>
             <p>Welcome to my portfolio</p>
-            <div className={style.cv}>
-              <a href={'#contacts'}><button>Contact ME</button></a>
-              <a href={'/cv/FedorovichSergeyCV.pdf'} target={'_blank'}><h3>Download CV <FiArrowDownCircle /></h3></a>
-            </div>
+            {/*<div className={style.cv}>*/}
+            {/*  <a href={'#projects'}><button>View works</button></a>*/}
+            {/*  <a href={'/cv/FedorovichSergeyCV.pdf'} target={'_blank'}><h3>Download CV <FiArrowDownCircle /></h3></a>*/}
+            {/*</div>*/}
           </div>
         </div>
         <a href={'#skills'}>

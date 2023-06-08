@@ -69,7 +69,7 @@ export const Contacts: FC = () => {
               </div>
             </div>
           </Animation>
-          <Animation animation={'animate__fadeInRight'} threshold={0.4}>
+          <Animation animation={'animate__fadeInLeft'} threshold={0.4}>
             <div className={style.form}>
               {isLoading && (
                 <div className={style.loadingWrapper}>
