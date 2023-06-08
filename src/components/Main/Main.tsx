@@ -3,7 +3,6 @@ import style from './Main.module.scss'
 import { Container } from '../Container/Container'
 import { Animation } from '../Animation/Animation'
 import ReactTypingEffect from 'react-typing-effect'
-import mainPhoto from '../../assets/image/mainPhoto.jpg'
 import main from '../../assets/image/main.jpg'
 
 export const Main: FC = () => {
