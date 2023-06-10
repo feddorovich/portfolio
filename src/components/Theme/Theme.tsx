@@ -5,7 +5,7 @@ import { BsMoon, BsSun } from 'react-icons/bs'
 const updateTheme = (theme: string) => {
   const root = document.querySelector(':root') as HTMLElement
 
-  const components = ['bgPrimary', 'text', 'bgSecondary', 'textSecondary', 'boxShadow', 'icons', 'buttons']
+  const components = ['bgPrimary', 'text', 'bgSecondary', 'textSecondary', 'boxShadow', 'icons', 'buttons', 'scrollbarMain']
   components.forEach((c) => {
     root.style.setProperty(`--${c}Default`, `var(--${c}${theme})`)
   })

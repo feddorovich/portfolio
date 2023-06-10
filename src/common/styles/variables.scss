@@ -17,6 +17,8 @@ $iconsLight: #4d555a;
 $iconsDark: #ffffff;
 $buttonsLight: #212529;
 $buttonsDark: #f5df50;
+$scrollbarMainLight: #c1c1c1;
+$scrollbarMainDark: #f5df50;
 
 :root {
   --bgPrimaryLight: #{$backgroundPrimaryColorLight};
@@ -46,4 +48,8 @@ $buttonsDark: #f5df50;
   --buttonsLight: #{$buttonsLight};
   --buttonsDark: #{$buttonsDark};
   --buttonsDefault: var(#{--buttonsLight});
+
+  --scrollbarMainLight: #{$scrollbarMainLight};
+  --scrollbarMainDark: #{$scrollbarMainDark};
+  --scrollbarMainDefault: var(#{--scrollbarMainLight});
 }
