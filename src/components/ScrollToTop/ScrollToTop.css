@@ -1,0 +1,15 @@
+.scroll-to-top-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    padding: 10px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.scroll-to-top-container.visible {
+    opacity: 1;
+}
