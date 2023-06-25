@@ -8,7 +8,6 @@ import { Contacts } from './components/Contacts/Сontacts'
 import { Footer } from './components/Footer/Footer'
 import { ScrollToTop } from './components/ScrollToTop/ScrollToTop'
 
-
 function App() {
   return (
     <div className="App">

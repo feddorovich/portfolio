@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import './ScrollToTop.css'
+import { BsArrowUpCircle, BsFillArrowUpSquareFill } from 'react-icons/bs'
+import s from './ScrollToTop.module.scss'
 
 export const ScrollToTop: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -25,10 +26,11 @@ export const ScrollToTop: React.FC = () => {
 
   return (
     <div
-      className={`scroll-to-top-container ${isVisible ? 'visible' : ''}`}
+      className={`${s.container} ${isVisible ? s.visible : ''}`}
       onClick={scrollToTop}
     >
-      Наверх
+      <BsArrowUpCircle className={s.icon}/>
+      {/*Наверх*/}
     </div>
   );
 };
