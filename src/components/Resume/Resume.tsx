@@ -18,8 +18,15 @@ export const Resume: FC = () => {
             <div className={style.education}>
               <h2>My Education</h2>
               <div className={style.educationInfo}>
-                <h3>Master in Computer Engineering</h3>
-                <h4>Harvard University / 2015 - 2017</h4>
+                <h3>Master in Economics</h3>
+                <h4>Belarus State Economic University / 2017 - 2019</h4>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                  dummy text.
+                </p>
+                <hr/>
+                <h3>Bachelor in Economics</h3>
+                <h4>Belarus State Economic University / 2013 - 2017</h4>
                 <p>
                   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                   dummy text.
@@ -30,8 +37,14 @@ export const Resume: FC = () => {
             <div className={style.experience}>
               <h2>My Experience</h2>
               <div className={style.educationInfo}>
-                <h3>Sr. Font End Developer</h3>
-                <h4>Apple Inc / 2020 - current</h4>
+                <h3>Jr. Font End Developer</h3>
+                <h4>telegif.com / 2022 - current</h4>
+                <p>
+                  Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.
+                </p>
+                <hr/>
+                <h3>Software Support Specialist</h3>
+                <h4>sys.by / 2021 - 2022</h4>
                 <p>
                   Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.
                 </p>
