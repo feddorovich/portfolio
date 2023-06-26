@@ -8,7 +8,7 @@ export const Resume: FC = () => {
     <section className={style.resumeBlock} id={'resume'}>
       <Container>
         <div className={style.wrapper}>
-          <Animation animation={'animate__fadeInUp'} threshold={0.4}>
+          <Animation animation={'animate__fadeInUp'} threshold={0.2}>
             <div className={style.title}>
               <h3>Resume</h3>
               <h2>A summary of My Resume</h2>
