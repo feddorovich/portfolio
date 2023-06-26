@@ -1,0 +1,86 @@
+@import '../../common/styles/variables';
+
+.resumeBlock {
+  background-color: var(#{--bgSecondaryDefault});
+  color: var(#{--textDefault});
+
+  .wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 100px 0;
+
+    .title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+      h2 {
+        font-size: 40px;
+        margin: 15px 0 48px;
+      }
+
+      h3 {
+        background-color: #f5df4f;
+        color: #000000;
+        padding: 0 8px;
+        font-weight: lighter;
+        font-size: 15px;
+      }
+    }
+
+    .resumes {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      gap: 20px;
+
+      h2 {
+        font-size: 28px;
+        margin-bottom: 32px;
+      }
+
+      .education {
+        .educationInfo {
+          padding: 0 0 0 16px;
+          border-left: 2px solid $primaryColor;
+
+          h3 {
+            font-size: 21px;
+          }
+
+          h4 {
+            margin-top: 8px;
+            font-size: 18px;
+            font-weight: normal;
+          }
+
+          p {
+            margin-top: 8px;
+            font-size: 16px;
+            line-height: 29px;
+            color: #6c757d;
+          }
+        }
+      }
+
+      .experience {
+      }
+
+      @media screen and (max-width: 1199px) {
+        //grid-template-columns: repeat(2, 1fr);
+      }
+
+      @media screen and (max-width: 575px) {
+        //grid-template-columns: repeat(1, 1fr);
+      }
+    }
+
+    @media screen and (max-width: 575px) {
+      padding: 50px 0;
+    }
+  }
+}
