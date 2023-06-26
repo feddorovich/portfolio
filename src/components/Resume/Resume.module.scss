@@ -43,8 +43,10 @@
         margin-bottom: 32px;
       }
 
-      .education {
-        .educationInfo {
+      .education, .experience {
+        flex-basis: 50%;
+
+        .educationInfo, .experienceInfo {
           padding: 0 0 0 16px;
           border-left: 2px solid $primaryColor;
 
@@ -62,20 +64,20 @@
             margin-top: 8px;
             font-size: 16px;
             line-height: 29px;
-            color: #6c757d;
+            color: var(#{--textSecondaryDefault});
+          }
+
+          hr {
+            opacity: 0.1;
+            margin-bottom: 1.5rem!important;
+            margin-top: 1.5rem!important;
           }
         }
       }
 
-      .experience {
-      }
-
-      @media screen and (max-width: 1199px) {
-        //grid-template-columns: repeat(2, 1fr);
-      }
-
-      @media screen and (max-width: 575px) {
-        //grid-template-columns: repeat(1, 1fr);
+      @media screen and (max-width: 992px) {
+        padding: 15px;
+        flex-direction: column;
       }
     }
 

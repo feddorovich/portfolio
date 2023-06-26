@@ -14,7 +14,7 @@ export const Resume: FC = () => {
               <h2>A summary of My Resume</h2>
             </div>
           </Animation>
-          <div className={style.resumes}>
+          <Animation animation={'animate__fadeInUp'} threshold={0.4} className={style.resumes}>
             <div className={style.education}>
               <h2>My Education</h2>
               <div className={style.educationInfo}>
@@ -24,12 +24,21 @@ export const Resume: FC = () => {
                   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                   dummy text.
                 </p>
+                <hr/>
               </div>
             </div>
             <div className={style.experience}>
               <h2>My Experience</h2>
+              <div className={style.educationInfo}>
+                <h3>Sr. Font End Developer</h3>
+                <h4>Apple Inc / 2020 - current</h4>
+                <p>
+                  Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.
+                </p>
+                <hr/>
+              </div>
             </div>
-          </div>
+          </Animation>
         </div>
       </Container>
     </section>
