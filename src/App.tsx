@@ -7,6 +7,7 @@ import { Projects } from './components/Projects/Projects'
 import { Contacts } from './components/Contacts/Сontacts'
 import { Footer } from './components/Footer/Footer'
 import { ScrollToTop } from './components/ScrollToTop/ScrollToTop'
+import { Resume } from './components/Resume/Resume'
 
 function App() {
   return (
@@ -14,10 +15,11 @@ function App() {
       <Header />
       <Main />
       <Skills />
+      <Resume />
       <Projects />
       <Contacts />
       <Footer />
-      <ScrollToTop/>
+      <ScrollToTop />
     </div>
   )
 }
