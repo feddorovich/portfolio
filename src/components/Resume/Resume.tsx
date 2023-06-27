@@ -52,6 +52,11 @@ export const Resume: FC = () => {
               </div>
             </div>
           </Animation>
+          <Animation animation={'animate__fadeInUp'} threshold={0.4}>
+            <div className={style.button}>
+              <a href='https://fedrr.com/cv/FedorovichSergeyCV.pdf' target={'_blank'}><button>Download CV </button> </a>
+            </div>
+          </Animation>
         </div>
       </Container>
     </section>
