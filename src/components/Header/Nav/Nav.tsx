@@ -38,6 +38,7 @@ export const Nav: FC<NavPropsType> = (props) => {
   const navData = [
     { link: 'main', name: 'Main' },
     { link: 'skills', name: 'Skills' },
+    { link: 'resume', name: 'Resume' },
     { link: 'projects', name: 'Projects' },
     { link: 'contacts', name: 'Contacts' },
   ]
