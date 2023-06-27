@@ -21,17 +21,14 @@ export const Resume: FC = () => {
                 <h3>Master in Economics</h3>
                 <h4>Belarus State Economic University / 2017 - 2019</h4>
                 <p>
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                  dummy text.
+                  Completion of Master's degree in Economics. Gained knowledge and expertise in various economic
+                  theories, quantitative analysis, and statistical modeling.
                 </p>
-                <hr/>
+                <hr />
                 <h3>Bachelor in Economics</h3>
                 <h4>Belarus State Economic University / 2013 - 2017</h4>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                  dummy text.
-                </p>
-                <hr/>
+                <p>Actively engaging in research projects and academic conferences. Received Headmaster's award.</p>
+                <hr />
               </div>
             </div>
             <div className={style.experience}>
@@ -40,21 +37,32 @@ export const Resume: FC = () => {
                 <h3>Jr. Font End Developer</h3>
                 <h4>telegif.com / 2022 - current</h4>
                 <p>
-                  Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.
+                  Experience working with React, Redux, TypeScript, developing complex web applications, and optimizing
+                  user interfaces
                 </p>
-                <hr/>
+                <hr />
+                <h3>IT Mentorship and Teaching Experience</h3>
+                <h4>it-incubator.io / 2022 - current</h4>
+                <p>
+                  Mentored in JavaScript, React and Redux, providing guidance and support. Conducted interactive
+                  teaching sessions, explaining complex concepts clearly.
+                </p>
+                <hr />
                 <h3>Software Support Specialist</h3>
                 <h4>sys.by / 2021 - 2022</h4>
                 <p>
-                  Lisque persius interesset his et, in quot quidam persequeris vim, ad mea essent possim iriure.
+                  Writing technical specifications, provided technical assistance and resolved software-related issues
+                  for users.
                 </p>
-                <hr/>
+                <hr />
               </div>
             </div>
           </Animation>
           <Animation animation={'animate__fadeInUp'} threshold={0.4}>
             <div className={style.button}>
-              <a href='https://fedrr.com/cv/FedorovichSergeyCV.pdf' target={'_blank'}><button>Download CV </button> </a>
+              <a href="https://fedrr.com/cv/FedorovichSergeyCV.pdf" target={'_blank'}>
+                <button>Download CV</button>
+              </a>
             </div>
           </Animation>
         </div>
