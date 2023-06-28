@@ -54,7 +54,7 @@ export const Skills: FC = () => {
           </Animation>
           <div className={style.skills}>
             {skillData.map((s, i) => {
-              return <Skill key={i} {...s} />
+              return <Animation key={i} animation={'animate__fadeInUp'} threshold={0.4}><Skill {...s} /></Animation>
             })}
           </div>
         </div>

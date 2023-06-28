@@ -7,10 +7,10 @@ import { Tilt } from 'react-tilt'
 export const Skill: FC<PropsType> = ({ title, Icon }) => {
   return (
     <Tilt options={{max: 30}}>
-      <Animation className={style.skill} animation={'animate__fadeInUp'} threshold={0.4}>
+      <div className={style.skill}>
         <Icon className={style.icon} />
         <h3>{title}</h3>
-      </Animation>
+      </div>
     </Tilt>
   )
 }
