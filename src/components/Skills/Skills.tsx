@@ -16,6 +16,7 @@ import {
   SiMui,
   SiTestcafe,
   SiVuedotjs,
+  SiNextdotjs,
 } from 'react-icons/si'
 import { IconType } from 'react-icons/lib'
 
@@ -29,11 +30,12 @@ const skillData: SkillDataType[] = [
   { Icon: SiRedux, title: 'Redux | Toolkit' },
   { Icon: SiJavascript, title: 'JavaScript' },
   { Icon: SiTypescript, title: 'TypeScript' },
+  { Icon: SiNextdotjs, title: 'Next.js' },
   { Icon: SiVuedotjs, title: 'Vue' },
   { Icon: SiAxios, title: 'Axios' },
   { Icon: SiJest, title: 'Jest' },
   { Icon: SiSass, title: 'SASS' },
-  { Icon: SiStyledcomponents, title: 'Styled-Components' },
+  // { Icon: SiStyledcomponents, title: 'Styled-Components' },
   { Icon: SiStorybook, title: 'StoryBook' },
   { Icon: SiMui, title: 'MUI' },
   { Icon: SiTestcafe, title: 'Unit-tests' },
