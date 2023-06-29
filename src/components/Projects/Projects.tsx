@@ -19,7 +19,7 @@ const projectsData: ProjectsDataType[] = [
     description: `This is my portfolio project built with TypeScript, React and SCSS for styling. 
         It's a web app showcasing my skills and projects in an interactive way, using a variety of customizable React 
         components. TypeScript ensures safer code, and SCSS simplifies style maintenance.`,
-    src: 'https://github.com/feddorovich',
+    src: 'https://github.com/feddorovich/portfolio',
   },
   // {
   //     img: 'https://www.imgonline.com.ua/examples/bee-on-daisy.jpg',
