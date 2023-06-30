@@ -12,10 +12,9 @@ type AnimationType = {
     | 'animate__fadeInRight'
     | 'animate__zoomIn'
   threshold: number
-  className?: string
 }
 
-export const Animation: FC<AnimationType> = ({ children, animation, threshold, className }) => {
+export const Animation: FC<AnimationType> = ({ children, animation, threshold }) => {
   const [active, setActive] = useState(false)
 
   const { ref, inView } = useInView({
@@ -29,7 +28,7 @@ export const Animation: FC<AnimationType> = ({ children, animation, threshold, c
   }, [inView])
 
   return (
-    <div ref={ref} className={`${active ? `animate__animated ${animation} ${className}` : style.opacity}`}>
+    <div ref={ref} className={`${active ? `animate__animated ${animation}` : style.opacity}`}>
       {children}
     </div>
   )
