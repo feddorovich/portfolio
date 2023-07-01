@@ -9,15 +9,8 @@ import { Alert } from './Alert/Alert'
 export const Contacts: FC = () => {
   const [isLoading, setIsLoading] = useState<boolean>(false)
   const [message, setMessage] = useState<string>('')
-  // const [isMessageEmpty, setIsMessageEmpty] = useState<boolean>(true)
 
   const form = useRef<HTMLFormElement>(null)
-
-  // const handleMessageChange = () => {
-  //   if (form.current) {
-  //     setIsMessageEmpty(form.current.message.value === '')
-  //   }
-  // }
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
@@ -27,17 +20,14 @@ export const Contacts: FC = () => {
       emailjs
         .sendForm('service_zbupw4l', 'template_ulaar7c', form.current, 'J3VuL-G6B0KqO8oIH')
         .then((result: EmailJSResponseStatus) => {
-          // alert('Your message has been successfully delivered.')
           setMessage('Your message has been successfully delivered.')
           form.current?.reset()
         })
         .catch((error) => {
-          // alert('Error sending message. Write to feddorovich@outlook.com')
           setMessage('Error sending message. Write to feddorovich@outlook.com.')
         })
         .finally(() => {
           setIsLoading(false)
-          // setIsMessageEmpty(true)
         })
     }
   }
@@ -46,7 +36,7 @@ export const Contacts: FC = () => {
     <section className={style.contactsBlock} id={'contacts'}>
       <Container>
         <div className={style.wrapper}>
-          <Animation animation={'animate__fadeInLeft'} threshold={0.4}>
+          <Animation animation={'animate__fadeInLeft'} threshold={0.1}>
             <div className={style.getInTouch}>
               <h2>Let's get in touch</h2>
               <p>
@@ -69,7 +59,7 @@ export const Contacts: FC = () => {
               </div>
             </div>
           </Animation>
-          <Animation animation={'animate__fadeInLeft'} threshold={0.4}>
+          <Animation animation={'animate__fadeInLeft'} threshold={0.1}>
             <div className={style.form}>
               {isLoading && (
                 <div className={style.loadingWrapper}>
