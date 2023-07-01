@@ -14,8 +14,8 @@ export const Resume: FC = () => {
               <h2>A summary of My Resume</h2>
             </div>
           </Animation>
-          <Animation animation={'animate__fadeInUp'} threshold={0.4} >
-            <div className={style.resumes}>
+          <div className={style.resumes}>
+            <Animation animation={'animate__fadeInUp'} threshold={0.3}>
               <div className={style.education}>
                 <h2>My Education</h2>
                 <div className={style.educationInfo}>
@@ -32,15 +32,16 @@ export const Resume: FC = () => {
                   <hr />
                 </div>
               </div>
+            </Animation>
+            <Animation animation={'animate__fadeInUp'} threshold={0.3}>
               <div className={style.experience}>
                 <h2>My Experience</h2>
-                <div className={style.educationInfo}>
+                <div className={style.experienceInfo}>
                   <h3>Jr. Font End Developer</h3>
                   <h4>telegif.com / 2022 - current</h4>
                   <p>
                     Experience working with React, Redux, TypeScript, developing complex web applications, and
-                    optimizing
-                    user interfaces
+                    optimizing user interfaces
                   </p>
                   <hr />
                   <h3>IT Mentorship and Teaching Experience</h3>
@@ -59,8 +60,8 @@ export const Resume: FC = () => {
                   <hr />
                 </div>
               </div>
-            </div>
-          </Animation>
+            </Animation>
+          </div>
           <Animation animation={'animate__fadeInUp'} threshold={0.4}>
             <div className={style.button}>
               <a href="https://fedrr.com/cv/FedorovichSergeyCV.pdf" target={'_blank'}>
