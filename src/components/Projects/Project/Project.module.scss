@@ -79,8 +79,18 @@
       display: inline-block;
       font-weight: 600;
       font-size: 20px;
-      margin-bottom: 20px;
       cursor: pointer;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        color: $primaryColor;
+      }
+    }
+
+    h4 {
+      font-weight: 500;
+      color: #e3c818;
+      margin: 10px 0;
     }
 
     p {
