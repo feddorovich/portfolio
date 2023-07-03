@@ -5,6 +5,7 @@ import { Animation } from '../../Animation/Animation'
 type ProjectPropsType = {
   img: string
   title: string
+  site?: string
   description: string
   src: string
 }
@@ -28,6 +29,7 @@ export const Project: FC<ProjectPropsType> = (props) => {
         </div>
         <div className={style.text}>
           <h3 onClick={onClickHandle(props.src)}>{props.title}</h3>
+          <h4>{props.site}</h4>
           <p>{props.description}</p>
         </div>
         <div className={style.btnView} onClick={onClickHandle(props.src)}>
