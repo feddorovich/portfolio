@@ -8,6 +8,7 @@ import portfolio from '../../assets/image/portfolio.png'
 type ProjectsDataType = {
   img: string
   title: string
+  site: string
   description: string
   src: string
 }
@@ -16,6 +17,7 @@ const projectsData: ProjectsDataType[] = [
   {
     img: portfolio,
     title: 'Portfolio',
+    site: 'fedrr.com',
     description: `This is my portfolio project built with TypeScript, React and SCSS for styling. 
         It's a web app showcasing my skills and projects in an interactive way, using a variety of customizable React 
         components. TypeScript ensures safer code, and SCSS simplifies style maintenance.`,
