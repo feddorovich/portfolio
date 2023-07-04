@@ -24,9 +24,10 @@ export const AboutMe = () => {
                 moto.
               </p>
             </div>
-            <div>
-              <div>2</div>
-              <div>Years of Experience</div>
+            <div className={style.numbers}>
+              <div className={style.number}>2</div>
+              <div className={style.circle}></div>
+              <div className={style.numberText}>Years of Experience</div>
             </div>
           </div>
         </div>
