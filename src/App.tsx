@@ -8,12 +8,14 @@ import { Contacts } from './components/Contacts/Сontacts'
 import { Footer } from './components/Footer/Footer'
 import { ScrollToTop } from './components/ScrollToTop/ScrollToTop'
 import { Resume } from './components/Resume/Resume'
+import { AboutMe } from './components/AboutMe/AboutMe'
 
 function App() {
   return (
     <div className="App">
       <Header />
       <Main />
+      <AboutMe/>
       <Skills />
       <Resume />
       <Projects />
