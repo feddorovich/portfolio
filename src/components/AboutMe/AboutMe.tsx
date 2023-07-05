@@ -32,26 +32,28 @@ export const AboutMe = () => {
               </div>
             </div>
           </Animation>
-          <Animation animation={'animate__fadeInUp'} threshold={0.1}>
-            <div className={style.personalBlock}>
-              <div>
-                <div>Name</div>
-                <div>Callum Smith</div>
+          <div className={style.personalBlockWrapper}>
+            <Animation animation={'animate__fadeInUp'} threshold={0.1}>
+              <div className={style.personalBlock}>
+                <div className={style.blockWrapper}>
+                  <div className={style.title}>Name:</div>
+                  <div className={style.info}>Callum Smith</div>
+                </div>
+                <div className={style.blockWrapper}>
+                  <div className={style.title}>Email:</div>
+                  <div className={style.info}>feddorovich@outlook.com</div>
+                </div>
+                <div className={style.blockWrapper}>
+                  <div className={style.title}>Date of birth:</div>
+                  <div className={style.info}>01 October, 1995</div>
+                </div>
+                <div className={style.blockWrapper}>
+                  <div className={style.title}>From:</div>
+                  <div className={style.info}>Minsk, Belarus</div>
+                </div>
               </div>
-              <div>
-                <div>Email:</div>
-                <div>feddorovich@outlook.com</div>
-              </div>
-              <div>
-                <div>Date of birth:</div>
-                <div>01 October, 1995</div>
-              </div>
-              <div>
-                <div>From:</div>
-                <div>Minsk, Belarus</div>
-              </div>
-            </div>
-          </Animation>
+            </Animation>
+          </div>
         </div>
       </Container>
     </section>

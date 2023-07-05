@@ -92,8 +92,33 @@
       }
     }
 
-    .personalBlock {
-      display: flex;
+    .personalBlockWrapper {
+      width: 100%;
+      margin-top: 40px;
+      padding-right: 165px;
+
+      .personalBlock {
+        display: flex;
+        justify-content: space-between;
+
+        .blockWrapper {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+
+          .title {
+            font-size: 16px;
+            font-weight: 700;
+            color: var(#{--textSecondaryDefault});
+          }
+
+          .info {
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: 700;
+          }
+        }
+      }
     }
 
 
