@@ -47,7 +47,7 @@
           position: absolute;
           left: 100px;
           width: 210px;
-          border-bottom: 3px solid #f5df4f;
+          border-bottom: 3px solid $primaryColor;
           transition: 0.2s ease-in-out;
           padding: 0 0 6px 0;
         }
@@ -78,10 +78,19 @@
           background-color: $primaryColor;
           display: inline-block;
           margin-right: 10px;
+
+          @media screen and (max-width: 1399px) {
+           left: 27%;
+          }
+
+          @media screen and (max-width: 1199px) {
+            left: 20%;
+          }
         }
 
         .numberText {
           font-size: 28px;
+          text-align: center;
         }
       }
 
@@ -89,6 +98,11 @@
         margin-top: 16px;
         font-size: 21px;
         line-height: 1.8;
+      }
+
+      @media screen and (max-width: 991px) {
+        display: flex;
+        flex-direction: column;
       }
     }
 
