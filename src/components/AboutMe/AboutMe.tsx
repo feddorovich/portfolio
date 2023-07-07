@@ -16,7 +16,7 @@ export const AboutMe = () => {
           </Animation>
           <Animation animation={'animate__fadeInUp'} threshold={0.4}>
             <div className={style.infoBlock}>
-              <div>
+              <div className={style.nameWrapper}>
                 <span className={style.name}>Hi, I'm</span>
                 <p>
                   I'm a designer & developer with a passion for web design. I enjoy developing simple, clean and slick

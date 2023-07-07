@@ -38,23 +38,36 @@
       grid-template-columns: 3fr 1fr;
       gap: 100px;
 
-      .name {
-        font-size: 32px;
-        position: relative;
+      .nameWrapper {
+        .name {
+          font-size: 32px;
+          position: relative;
 
-        &::after {
-          content: 'Sergey Smith';
-          font-weight: 700;
-          position: absolute;
-          left: 100px;
-          width: 210px;
-          border-bottom: 3px solid $primaryColor;
-          transition: 0.2s ease-in-out;
-          padding: 0 0 6px 0;
+          @media screen and (max-width: 991px) {
+            transform: translate(-120%, 0);
+          }
+
+          &::after {
+            content: 'Sergey Smith';
+            font-weight: 700;
+            position: absolute;
+            left: 100px;
+            width: 210px;
+            border-bottom: 3px solid $primaryColor;
+            transition: 0.2s ease-in-out;
+            padding: 0 0 6px 0;
+          }
+
+          &:hover::after {
+            transform: translateX(3%) scaleX(1);
+          }
         }
 
-        &:hover::after {
-          transform: translateX(3%) scaleX(1);
+        @media screen and (max-width: 991px) {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
         }
       }
 
@@ -69,7 +82,7 @@
           z-index: 1;
 
           @media screen and (max-width: 991px) {
-            transform: translate(0, 20%);
+            transform: translate(0, 30%);
           }
         }
 
@@ -102,6 +115,10 @@
         .numberText {
           font-size: 28px;
           text-align: center;
+
+          @media screen and (max-width: 991px) {
+            margin-top: 20px;
+          }
         }
       }
 
@@ -109,6 +126,10 @@
         margin-top: 16px;
         font-size: 21px;
         line-height: 1.8;
+
+        @media screen and (max-width: 991px) {
+          text-align: center;
+        }
       }
 
       @media screen and (max-width: 991px) {
@@ -152,7 +173,7 @@
       }
 
       @media screen and (max-width: 991px) {
-        margin-top: 10px;
+        display: none;
       }
     }
 
