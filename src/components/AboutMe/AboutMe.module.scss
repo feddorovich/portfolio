@@ -40,27 +40,22 @@
       gap: 100px;
 
       .nameWrapper {
-        .name {
-          font-size: 32px;
-          position: relative;
+        .nameUnderlineWrapper {
+          .name {
+            font-size: 32px;
 
-          @media screen and (max-width: 991px) {
-            transform: translate(-120%, 0);
+            @media screen and (max-width: 991px) {
+              transform: translate(-120%, 0);
+            }
           }
 
-          &::after {
-            content: 'Sergey Smith';
+          .nameUnderline {
+            //margin-left: 5px;
+            font-size: 32px;
             font-weight: 700;
-            position: absolute;
-            left: 100px;
-            width: 210px;
             border-bottom: 3px solid $primaryColor;
             transition: 0.2s ease-in-out;
             padding: 0 0 6px 0;
-          }
-
-          &:hover::after {
-            transform: translateX(3%) scaleX(1);
           }
         }
 

@@ -17,7 +17,10 @@ export const AboutMe = () => {
           <Animation animation={'animate__fadeInUp'} threshold={0.4}>
             <div className={style.infoBlock}>
               <div className={style.nameWrapper}>
-                <span className={style.name}>Hi, I'm</span>
+                <div className={style.nameUnderlineWrapper}>
+                  <span className={style.name}>Hi, I'm</span>{' '}
+                  <span className={style.nameUnderline}>Sergey Fedorovich</span>
+                </div>
                 <p>
                   I'm a designer & developer with a passion for web design. I enjoy developing simple, clean and slick
                   websites that provide real value to the end user. Thousands of clients have procured exceptional
