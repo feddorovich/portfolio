@@ -40,7 +40,6 @@
       gap: 100px;
 
       .nameWrapper {
-        text-align: center;
         max-width: 100%;
 
         .nameUnderlineWrapper {
@@ -49,6 +48,7 @@
 
             @media screen and (max-width: 991px) {
               transform: translate(-120%, 0);
+              text-align: center;
             }
           }
 
