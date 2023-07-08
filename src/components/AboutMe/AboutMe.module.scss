@@ -40,6 +40,9 @@
       gap: 100px;
 
       .nameWrapper {
+        text-align: center;
+        max-width: 100%;
+
         .nameUnderlineWrapper {
           .name {
             font-size: 32px;
@@ -50,12 +53,16 @@
           }
 
           .nameUnderline {
-            //margin-left: 5px;
+            margin-left: 7px;
             font-size: 32px;
             font-weight: 700;
             border-bottom: 3px solid $primaryColor;
             transition: 0.2s ease-in-out;
             padding: 0 0 6px 0;
+
+            @media screen and (max-width: 414px) {
+              padding: 0;
+            }
           }
         }
 

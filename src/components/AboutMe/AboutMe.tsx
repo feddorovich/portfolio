@@ -18,7 +18,7 @@ export const AboutMe = () => {
             <div className={style.infoBlock}>
               <div className={style.nameWrapper}>
                 <div className={style.nameUnderlineWrapper}>
-                  <span className={style.name}>Hi, I'm</span>{' '}
+                  <span className={style.name}>Hi, I'm</span>
                   <span className={style.nameUnderline}>Sergey Fedorovich</span>
                 </div>
                 <p>
