@@ -1,4 +1,5 @@
 @import '../../common/styles/variables';
+@import '../../common/styles/mixins';
 
 .aboutMeBlock {
   background-color: var(#{--bgPrimaryDefault});
@@ -80,6 +81,7 @@
         .number {
           font-size: 150px;
           z-index: 1;
+          @include adapt-font(150, 130, 180, 180);
 
           @media screen and (max-width: 991px) {
             transform: translate(0, 30%);
