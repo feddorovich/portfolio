@@ -36,7 +36,7 @@
 
     .infoBlock {
       display: grid;
-      grid-template-columns: 3fr 1fr;
+      grid-template-columns: 3fr 1.5fr;
       gap: 100px;
 
       .nameWrapper {
@@ -92,7 +92,7 @@
 
         .circle {
           position: absolute;
-          left: 30%;
+          left: 35%;
           top: 0;
           width: 120px;
           height: 120px;
@@ -102,11 +102,11 @@
           margin-right: 10px;
 
           @media screen and (max-width: 1399px) {
-            left: 27%;
+            left: 32%;
           }
 
           @media screen and (max-width: 1199px) {
-            left: 20%;
+            left: 27%;
           }
 
           @media screen and (max-width: 991px) {
