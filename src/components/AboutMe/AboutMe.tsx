@@ -40,11 +40,13 @@ export const AboutMe = () => {
               <div className={style.personalBlock}>
                 <div className={style.blockWrapper}>
                   <div className={style.title}>Name:</div>
-                  <div className={style.info}>Callum Smith</div>
+                  <div className={style.info}>Sergey Fedorovich</div>
                 </div>
                 <div className={style.blockWrapper}>
                   <div className={style.title}>Email:</div>
-                  <div className={style.info}>feddorovich@outlook.com</div>
+                  <div className={style.info}>
+                    <a href="mailto:feddorovich@outlook.com">feddorovich@outlook.com</a>
+                  </div>
                 </div>
                 <div className={style.blockWrapper}>
                   <div className={style.title}>Date of birth:</div>
